@@ -96,10 +96,10 @@
         </Constraint>
       </Constraints>
     </Component>
-    <Component class="javax.swing.JTextField" name="JTF_EditID">
+    <Component class="javax.swing.JTextField" name="JTF_EditIDKeterangan">
       <Constraints>
         <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-          <AbsoluteConstraints x="480" y="510" width="110" height="-1"/>
+          <AbsoluteConstraints x="710" y="510" width="110" height="-1"/>
         </Constraint>
       </Constraints>
     </Component>
@@ -180,10 +180,10 @@
         </Constraint>
       </Constraints>
     </Component>
-    <Component class="javax.swing.JTextField" name="jTextField1">
+    <Component class="javax.swing.JTextField" name="JTF_EditIdKriteria">
       <Constraints>
         <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-          <AbsoluteConstraints x="720" y="510" width="120" height="-1"/>
+          <AbsoluteConstraints x="480" y="510" width="120" height="-1"/>
         </Constraint>
       </Constraints>
     </Component>

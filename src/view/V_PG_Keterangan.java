@@ -23,11 +23,9 @@ public class V_PG_Keterangan extends javax.swing.JFrame {
         initComponents();
     }
 
-
     public JButton getBtn_EditKriteria() {
         return BTN_EditKriteria;
     }
-
 
     public JButton getBtn_OkEditKriteria() {
         return BTN_OkEditKriteria;
@@ -41,9 +39,12 @@ public class V_PG_Keterangan extends javax.swing.JFrame {
         return table_Kriteria;
     }
 
+    public JTextField get_EditIdKeterangan() {
+        return JTF_EditIDKeterangan;
+    }
 
     public JTextField get_EditIdKriteria() {
-        return JTF_EditID;
+        return JTF_EditIdKriteria;
     }
 
     public JTextField get_EditNamaKriteria() {
@@ -66,7 +67,7 @@ public class V_PG_Keterangan extends javax.swing.JFrame {
         this.getBtn_OkEditKriteria().setVisible(active);
         this.get_EditNamaKriteria().setVisible(active);
         this.get_EditBobot().setVisible(active);
-        JTF_EditID.setVisible(active);
+        JTF_EditIDKeterangan.setVisible(active);
         jLabel7.setVisible(active);
         jLabel8.setVisible(active);
         jLabel9.setVisible(active);
@@ -84,13 +85,13 @@ public class V_PG_Keterangan extends javax.swing.JFrame {
         jLabel8 = new javax.swing.JLabel();
         BTN_OkEditKriteria = new javax.swing.JButton();
         BTN_EditKriteria = new javax.swing.JButton();
-        JTF_EditID = new javax.swing.JTextField();
+        JTF_EditIDKeterangan = new javax.swing.JTextField();
         jScrollPane1 = new javax.swing.JScrollPane();
         table_Kriteria = new javax.swing.JTable();
         jLabel9 = new javax.swing.JLabel();
         jLabel2 = new javax.swing.JLabel();
         jLabel3 = new javax.swing.JLabel();
-        jTextField1 = new javax.swing.JTextField();
+        JTF_EditIdKriteria = new javax.swing.JTextField();
         jLabel1 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
@@ -115,7 +116,7 @@ public class V_PG_Keterangan extends javax.swing.JFrame {
 
         BTN_EditKriteria.setText("Edit");
         getContentPane().add(BTN_EditKriteria, new org.netbeans.lib.awtextra.AbsoluteConstraints(450, 460, 260, -1));
-        getContentPane().add(JTF_EditID, new org.netbeans.lib.awtextra.AbsoluteConstraints(480, 510, 110, -1));
+        getContentPane().add(JTF_EditIDKeterangan, new org.netbeans.lib.awtextra.AbsoluteConstraints(710, 510, 110, -1));
 
         table_Kriteria.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
@@ -140,7 +141,7 @@ public class V_PG_Keterangan extends javax.swing.JFrame {
 
         jLabel3.setText("Id Kriteria");
         getContentPane().add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(640, 510, -1, -1));
-        getContentPane().add(jTextField1, new org.netbeans.lib.awtextra.AbsoluteConstraints(720, 510, 120, -1));
+        getContentPane().add(JTF_EditIdKriteria, new org.netbeans.lib.awtextra.AbsoluteConstraints(480, 510, 120, -1));
 
         jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/image/gudang.jpg"))); // NOI18N
         getContentPane().add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, -1, -1));
@@ -189,7 +190,8 @@ public class V_PG_Keterangan extends javax.swing.JFrame {
     private javax.swing.JButton BTN_EditKriteria;
     private javax.swing.JButton BTN_OkEditKriteria;
     private javax.swing.JTextField JTF_EditBobotKriteria;
-    private javax.swing.JTextField JTF_EditID;
+    private javax.swing.JTextField JTF_EditIDKeterangan;
+    private javax.swing.JTextField JTF_EditIdKriteria;
     private javax.swing.JTextField JTF_EditNamaKriteria;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
@@ -198,7 +200,6 @@ public class V_PG_Keterangan extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel8;
     private javax.swing.JLabel jLabel9;
     private javax.swing.JScrollPane jScrollPane1;
-    private javax.swing.JTextField jTextField1;
     private javax.swing.JTable table_Kriteria;
     // End of variables declaration//GEN-END:variables
 }

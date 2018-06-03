@@ -71,8 +71,7 @@ public class M_Kriteria {
         }
     }
 
-    public boolean insertKeterangan(int data[], int IDkrit) throws SQLException {
-        int id = IDkrit;
+    public boolean insertKeterangan(int data[], int id) throws SQLException {
         String query = "INSERT INTO `keterangan`(`kriteria_ID`,`keterangan`,`bobot`) VALUES ('" + id + "','" + data[0] + "','" + data[1] + "')";
         try {
             con.executeQuery(query);
