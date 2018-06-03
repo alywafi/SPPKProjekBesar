@@ -151,11 +151,13 @@ public class V_PG_Kriteria extends javax.swing.JFrame {
 
         BTN_Keluar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/image/btn_keluar.png"))); // NOI18N
         BTN_Keluar.setBorderPainted(false);
+        BTN_Keluar.setContentAreaFilled(false);
         BTN_Keluar.setOpaque(false);
         getContentPane().add(BTN_Keluar, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 640, -1, -1));
 
         Btn_kriteria.setIcon(new javax.swing.ImageIcon(getClass().getResource("/image/btn_Kriteia.png"))); // NOI18N
         Btn_kriteria.setBorderPainted(false);
+        Btn_kriteria.setContentAreaFilled(false);
         Btn_kriteria.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         Btn_kriteria.setDisabledSelectedIcon(null);
         Btn_kriteria.setOpaque(false);
@@ -163,6 +165,7 @@ public class V_PG_Kriteria extends javax.swing.JFrame {
 
         Btn_Penjualan.setIcon(new javax.swing.ImageIcon(getClass().getResource("/image/btn_Penjualan.png"))); // NOI18N
         Btn_Penjualan.setBorderPainted(false);
+        Btn_Penjualan.setContentAreaFilled(false);
         Btn_Penjualan.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         Btn_Penjualan.setDisabledSelectedIcon(null);
         Btn_Penjualan.setOpaque(false);

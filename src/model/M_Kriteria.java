@@ -46,7 +46,7 @@ public class M_Kriteria {
         String kolom[] = {"ID", "keterangan", "bobot"};
         DefaultTableModel table = new DefaultTableModel(null, kolom);
 
-        String query = "select * from keterangan where tanggal = '" + id + "'";
+        String query = "select keterangan_ID, keterangan, bobot from keterangan where kriteria_ID = '" + id + "'";
         ResultSet rs = con.getResult(query);
 
         while (rs.next()) {
@@ -71,7 +71,7 @@ public class M_Kriteria {
         }
     }
 
-    public boolean insertKeterangan(int data[], int id) throws SQLException {
+    public boolean insertKeterangan(String data[], int id) throws SQLException {
         String query = "INSERT INTO `keterangan`(`kriteria_ID`,`keterangan`,`bobot`) VALUES ('" + id + "','" + data[0] + "','" + data[1] + "')";
         try {
             con.executeQuery(query);
@@ -96,7 +96,7 @@ public class M_Kriteria {
     }
 
     public boolean updateKeterangan(String[] data, int id) throws SQLException {
-        String query = "UPDATE `keterangan` SET `keterangan`='" + data[1] + "',`bobot`='" + data[2] + " WHERE id_user= " + id + " ";
+        String query = "UPDATE `keterangan` SET `keterangan`='" + data[0] + "',`bobot` = " + data[1] + " WHERE kriteria_ID = '" + id + "'";
         try {
             con.executeQuery(query);
             return true;

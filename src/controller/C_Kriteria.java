@@ -11,6 +11,7 @@ import java.sql.SQLException;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 import model.M_Kriteria;
+import view.V_PG_Keterangan;
 import view.V_PG_Kriteria;
 
 /**
@@ -44,8 +45,7 @@ public class C_Kriteria {
         view.getBtn_LihatKeterangan().addActionListener(new KeteranganAction());
     }
 
-
-    public void setNullEdit () {
+    public void setNullEdit() {
         view.get_EditIdKriteria().setText(" ");
         view.get_EditBobot().setText(" ");
         view.get_EditNamaKriteria().setText(" ");
@@ -55,7 +55,12 @@ public class C_Kriteria {
 
         @Override
         public void actionPerformed(ActionEvent e) {
-
+            try {
+                new C_Keterangan(new V_PG_Keterangan(), new M_Kriteria(), Integer.valueOf(view.getIdFromTable(0)) );
+            } catch (SQLException ex) {
+                Logger.getLogger(C_Kriteria.class.getName()).log(Level.SEVERE, null, ex);
+            }
+            view.dispose();
         }
     }
 
@@ -72,13 +77,12 @@ public class C_Kriteria {
                 data[2] = String.valueOf(1);
             }
             data[3] = (String) view.get_TambahJenisInputan().getSelectedItem();
-        
 
             try {
                 if (model.insertKriteria(data)) {
                     System.out.println("wkwkwk");
                 } else {
-                System.out.println("gagal");
+                    System.out.println("gagal");
                 }
 
             } catch (SQLException ex) {
@@ -105,28 +109,28 @@ public class C_Kriteria {
             String[] data = new String[3];
             data[0] = view.get_EditNamaKriteria().getText();
             data[1] = view.get_EditBobot().getText();
-             if (view.get_EditTipeNilai().getSelectedItem() == "Cost") {
+            if (view.get_EditTipeNilai().getSelectedItem() == "Cost") {
                 data[2] = String.valueOf(-1);
             } else {
                 data[2] = String.valueOf(1);
             }
 
             try {
-                if ( model.updateKriteria(data, Integer.valueOf(view.get_EditIdKriteria().getText()))) {
+                if (model.updateKriteria(data, Integer.valueOf(view.get_EditIdKriteria().getText()))) {
                     System.out.println("wkwkwk");
-                }else {
+                } else {
                     System.out.println("gagal");
                 }
-               
+
             } catch (SQLException ex) {
                 Logger.getLogger(C_Kriteria.class.getName()).log(Level.SEVERE, null, ex);
             }
-             try {
+            try {
                 view.getTable_Kriteria().setModel(model.getKriteria());
             } catch (SQLException ex) {
                 Logger.getLogger(C_Kriteria.class.getName()).log(Level.SEVERE, null, ex);
             }
-            
+
         }
 
     }
@@ -140,8 +144,7 @@ public class C_Kriteria {
             view.get_EditIdKriteria().setText(view.getIdFromTable(0));
             view.get_EditNamaKriteria().setText(view.getIdFromTable(1));
             view.get_EditBobot().setText(view.getIdFromTable(2));
-            
-           
+
         }
 
     }
