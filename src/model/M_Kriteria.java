@@ -72,7 +72,7 @@ public class M_Kriteria {
     }
 
     public boolean insertKeterangan(String data[], int id) throws SQLException {
-        String query = "INSERT INTO `keterangan`(`kriteria_ID`,`keterangan`,`bobot`) VALUES ('" + id + "','" + data[0] + "','" + data[1] + "')";
+        String query = "INSERT INTO `keterangan`(`kriteria_ID`,`keterangan`,`bobot`) VALUES (" + id + " , '" + data[0] + "' , " + data[1] + ") ";
         try {
             con.executeQuery(query);
             return true;
@@ -96,13 +96,57 @@ public class M_Kriteria {
     }
 
     public boolean updateKeterangan(String[] data, int id) throws SQLException {
-        String query = "UPDATE `keterangan` SET `keterangan`='" + data[0] + "',`bobot` = " + data[1] + " WHERE kriteria_ID = '" + id + "'";
+        String query = "UPDATE `keterangan` SET `keterangan`='" + data[0] + "',`bobot` = " + data[1] + " WHERE keterangan_ID = '" + id + "'";
         try {
             con.executeQuery(query);
             return true;
         } catch (Exception e) {
             return false;
         }
+    }
+
+    public String[][] getKriteriaForSupp() throws SQLException {
+        int c = 0;
+        String query1 = "select Kriteria from kriteria ";
+        ResultSet rs1 = con.getResult(query1);
+        while (rs1.next()) {
+            c++;
+
+        }
+        String[][] data = new String[c][5];
+        String query = "select * from kriteria ";
+        ResultSet rs = con.getResult(query);
+
+        int penanda = 0;
+        while (rs.next()) {
+            for (int i = 0; i < 5; i++) {
+                data[penanda][i] = rs.getString(i + 1);
+            }
+            penanda++;
+        }
+        return data;
+    }
+
+    public String[][] getKeteranganForSupp(int id) throws SQLException {
+        int c = 0;
+        String query1 = "select Kriteria from kriteria ";
+        ResultSet rs1 = con.getResult(query1);
+        while (rs1.next()) {
+            c++;
+
+        }
+        String[][] data = new String[c][3];
+        String query = "select keterangan_ID, keterangan, bobot from keterangan where kriteria_ID = '" + id + "'";
+        ResultSet rs = con.getResult(query);
+
+        int penanda = 0;
+        while (rs.next()) {
+            for (int i = 0; i < 3; i++) {
+                data[penanda][i] = rs.getString(i + 1);
+            }
+            penanda++;
+        }
+        return data;
     }
 
 }

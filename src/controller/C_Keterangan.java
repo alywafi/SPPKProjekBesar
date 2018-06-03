@@ -66,7 +66,7 @@ public class C_Keterangan {
             data [1] = view.get_EditBobot().getText();
             
             try {
-                if (model.updateKeterangan(data, ID)) {
+                if (model.updateKeterangan(data, Integer.valueOf(view.get_EditIdKeterangan().getText()))) {
                     System.out.println("wkwkwk");
                 }else {
                     System.out.println("gagal");
@@ -104,9 +104,10 @@ public class C_Keterangan {
             try {
                 if (model.insertKeterangan(data, ID)) {
                     System.out.println("wkwkwk");
+                }else{
+                System.out.println("gagal");
                 }
             } catch (SQLException ex) {
-                System.out.println("gagal");
                 Logger.getLogger(C_Keterangan.class.getName()).log(Level.SEVERE, null, ex);
             }
             try {

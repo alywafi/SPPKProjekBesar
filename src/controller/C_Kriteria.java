@@ -88,6 +88,11 @@ public class C_Kriteria {
             } catch (SQLException ex) {
                 Logger.getLogger(C_Kriteria.class.getName()).log(Level.SEVERE, null, ex);
             }
+            try {
+                view.getTable_Kriteria().setModel(model.getKriteria());
+            } catch (SQLException ex) {
+                Logger.getLogger(C_Kriteria.class.getName()).log(Level.SEVERE, null, ex);
+            }
         }
     }
 
