@@ -22,6 +22,7 @@ public class V_PG_Keterangan extends javax.swing.JFrame {
      */
     public V_PG_Keterangan() {
         initComponents();
+        this.setLocationRelativeTo(null);
     }
 
     public JButton getBtn_EditKeterangan() {
@@ -51,13 +52,15 @@ public class V_PG_Keterangan extends javax.swing.JFrame {
     public JTextField get_TambahBobot() {
         return JTF_TambahbobotKeterangan;
     }
+
     public JTextArea get_TambahDetailKeterangan() {
-        return JTA_TambahDetailKeterangan ;
+        return JTA_TambahDetailKeterangan;
     }
 
     public JTextField get_EditIdKeterangan() {
         return JTF_EditIDKeterangan;
     }
+
     public JTextField get_EditIdKriteria() {
         return JTF_EditIDKriteria;
     }
@@ -65,6 +68,7 @@ public class V_PG_Keterangan extends javax.swing.JFrame {
     public JTextField get_EditBobot() {
         return JTF_EditBobotKeterangan;
     }
+
     public JTextArea get_EditDetailKeterangan() {
         return JTA_EditDetailKeterangan;
     }

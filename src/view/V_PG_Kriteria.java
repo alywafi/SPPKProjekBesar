@@ -21,6 +21,7 @@ public class V_PG_Kriteria extends javax.swing.JFrame {
      */
     public V_PG_Kriteria() {
         initComponents();
+        this.setLocationRelativeTo(null);
     }
 
     public JButton getBtn_LihatKeterangan() {

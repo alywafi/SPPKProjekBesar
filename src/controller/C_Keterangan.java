@@ -23,11 +23,13 @@ public class C_Keterangan {
     V_PG_Keterangan view;
     M_Kriteria model;
     int ID;
+    int idpeg;
 
-    public C_Keterangan(V_PG_Keterangan v, M_Kriteria m, int id) throws SQLException {
+    public C_Keterangan(V_PG_Keterangan v, M_Kriteria m, int id, int idpeg) throws SQLException {
         this.view = v;
         this.model = m;
         this.ID = id;
+        this.idpeg = idpeg ;
 
         view.setVisible(true);
         view.getTable_Keterangan().setModel(model.getKeterangan(id));
@@ -123,7 +125,7 @@ public class C_Keterangan {
         @Override
         public void actionPerformed(ActionEvent e) {
             try {
-                new C_Kriteria(new V_PG_Kriteria(), new M_Kriteria());
+                new C_Kriteria(new V_PG_Kriteria(), new M_Kriteria(),idpeg);
             } catch (SQLException ex) {
                 Logger.getLogger(C_Keterangan.class.getName()).log(Level.SEVERE, null, ex);
             }

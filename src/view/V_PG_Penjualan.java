@@ -26,6 +26,9 @@ public class V_PG_Penjualan extends javax.swing.JFrame {
     public JTable getTableIkan() {
         return JTable_Ikan;
     }
+    public JButton getBtnKriteria () {
+        return btn_kriteria ;
+    }
 
     public JButton getBtnBeli() {
         return btn_Beli;
@@ -46,6 +49,8 @@ public class V_PG_Penjualan extends javax.swing.JFrame {
         jScrollPane1 = new javax.swing.JScrollPane();
         JTable_Ikan = new javax.swing.JTable();
         btn_Beli = new javax.swing.JButton();
+        btn_kriteria = new javax.swing.JButton();
+        btn_penjualan = new javax.swing.JButton();
         jLabel1 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
@@ -66,10 +71,22 @@ public class V_PG_Penjualan extends javax.swing.JFrame {
         ));
         jScrollPane1.setViewportView(JTable_Ikan);
 
-        getContentPane().add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(390, 90, 950, -1));
+        getContentPane().add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(390, 90, 930, -1));
 
         btn_Beli.setText("Beli");
-        getContentPane().add(btn_Beli, new org.netbeans.lib.awtextra.AbsoluteConstraints(766, 561, 122, 49));
+        getContentPane().add(btn_Beli, new org.netbeans.lib.awtextra.AbsoluteConstraints(760, 580, 122, 49));
+
+        btn_kriteria.setIcon(new javax.swing.ImageIcon(getClass().getResource("/image/btn_Kriteia.png"))); // NOI18N
+        btn_kriteria.setBorderPainted(false);
+        btn_kriteria.setContentAreaFilled(false);
+        btn_kriteria.setOpaque(false);
+        getContentPane().add(btn_kriteria, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 460, -1, -1));
+
+        btn_penjualan.setIcon(new javax.swing.ImageIcon(getClass().getResource("/image/btn_Penjualan.png"))); // NOI18N
+        btn_penjualan.setBorderPainted(false);
+        btn_penjualan.setContentAreaFilled(false);
+        btn_penjualan.setOpaque(false);
+        getContentPane().add(btn_penjualan, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 540, -1, -1));
 
         jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/image/gudang.jpg"))); // NOI18N
         getContentPane().add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, -1, -1));
@@ -116,6 +133,8 @@ public class V_PG_Penjualan extends javax.swing.JFrame {
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JTable JTable_Ikan;
     private javax.swing.JButton btn_Beli;
+    private javax.swing.JButton btn_kriteria;
+    private javax.swing.JButton btn_penjualan;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JScrollPane jScrollPane1;
     // End of variables declaration//GEN-END:variables

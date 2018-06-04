@@ -3,9 +3,16 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
+            <file>file:/C:/Users/USER/Documents/NetBeansProjects/SPPKProjekBesar/src/controller/C_Pgudang.java</file>
             <file>file:/C:/Users/USER/Documents/NetBeansProjects/SPPKProjekBesar/src/controller/C_Login.java</file>
             <file>file:/C:/Users/USER/Documents/NetBeansProjects/SPPKProjekBesar/src/model/M_Kriteria.java</file>
             <file>file:/C:/Users/USER/Documents/NetBeansProjects/SPPKProjekBesar/src/controller/C_Keterangan.java</file>
+            <file>file:/C:/Users/USER/Documents/NetBeansProjects/SPPKProjekBesar/src/model/M_Ikan.java</file>
+            <file>file:/C:/Users/USER/Documents/NetBeansProjects/SPPKProjekBesar/src/controller/C_Kriteria.java</file>
+            <file>file:/C:/Users/USER/Documents/NetBeansProjects/SPPKProjekBesar/src/controller/C_Supplier.java</file>
+            <file>file:/C:/Users/USER/Documents/NetBeansProjects/SPPKProjekBesar/src/view/V_PG_Kriteria.java</file>
+            <file>file:/C:/Users/USER/Documents/NetBeansProjects/SPPKProjekBesar/src/view/V_PG_Penjualan.java</file>
+            <file>file:/C:/Users/USER/Documents/NetBeansProjects/SPPKProjekBesar/src/view/V_Supplier.java</file>
             <file>file:/C:/Users/USER/Documents/NetBeansProjects/SPPKProjekBesar/src/view/V_PG_Keterangan.java</file>
         </group>
     </open-files>

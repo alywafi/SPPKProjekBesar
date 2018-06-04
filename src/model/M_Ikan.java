@@ -104,14 +104,14 @@ public class M_Ikan {
     }
 
     public DefaultTableModel getDataWithID(int id) throws SQLException {
-        String kolom[] = {"ID", "ID Penjual", "tanggal", "Jumlah", "bau", "mata", "insang", "badan", "daging", "perut", "skor"};
+        String kolom[] = {"ID", "tanggal", "Jumlah"};
         DefaultTableModel table = new DefaultTableModel(null, kolom);
 
-        String query = "select * from ikan where User_ID = '" + id + "'";
+        String query = "select Ikan_ID , tanggal , jumlah from ikan where User_ID = '" + id + "'";
         ResultSet rs = con.getResult(query);
 
         while (rs.next()) {
-            String row[] = new String[11];
+            String row[] = new String[kolom.length];
             for (int i = 0; i < row.length; i++) {
                 row[i] = rs.getString(i + 1);
             }

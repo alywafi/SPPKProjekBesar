@@ -10,9 +10,11 @@ import java.awt.event.ActionListener;
 import java.sql.SQLException;
 import java.util.logging.Level;
 import java.util.logging.Logger;
+import model.M_Ikan;
 import model.M_Kriteria;
 import view.V_PG_Keterangan;
 import view.V_PG_Kriteria;
+import view.V_PG_Penjualan;
 
 /**
  *
@@ -22,10 +24,12 @@ public class C_Kriteria {
 
     V_PG_Kriteria view;
     M_Kriteria model;
+    int IDpeg ;
 
-    public C_Kriteria(V_PG_Kriteria v, M_Kriteria m) throws SQLException {
+    public C_Kriteria(V_PG_Kriteria v, M_Kriteria m , int IDpeg) throws SQLException {
         this.view = v;
         this.model = m;
+        this.IDpeg = IDpeg ;
 
         view.setVisible(true);
         view.get_EditIdKriteria().setEnabled(false);
@@ -56,7 +60,7 @@ public class C_Kriteria {
         @Override
         public void actionPerformed(ActionEvent e) {
             try {
-                new C_Keterangan(new V_PG_Keterangan(), new M_Kriteria(), Integer.valueOf(view.getIdFromTable(0)) );
+                new C_Keterangan(new V_PG_Keterangan(), new M_Kriteria(), Integer.valueOf(view.getIdFromTable(0)),IDpeg);
             } catch (SQLException ex) {
                 Logger.getLogger(C_Kriteria.class.getName()).log(Level.SEVERE, null, ex);
             }
@@ -158,7 +162,13 @@ public class C_Kriteria {
 
         @Override
         public void actionPerformed(ActionEvent e) {
-
+            try {
+                new C_Pgudang(new V_PG_Penjualan(), new M_Ikan(), IDpeg) ;
+            } catch (SQLException ex) {
+                Logger.getLogger(C_Kriteria.class.getName()).log(Level.SEVERE, null, ex);
+            }
+            view.dispose();
+        
         }
 
     }

@@ -213,6 +213,7 @@ public class V_Supplier extends javax.swing.JFrame {
         jrb_bau_5 = new javax.swing.JRadioButton();
         jrb_bau_1 = new javax.swing.JRadioButton();
         btn_lanjut2 = new javax.swing.JButton();
+        jLabel9 = new javax.swing.JLabel();
         mata = new javax.swing.JFrame();
         jLabel3 = new javax.swing.JLabel();
         jrb_mata_9 = new javax.swing.JRadioButton();
@@ -223,6 +224,7 @@ public class V_Supplier extends javax.swing.JFrame {
         jrb_mata_5 = new javax.swing.JRadioButton();
         jrb_mata_3 = new javax.swing.JRadioButton();
         jrb_mata_1 = new javax.swing.JRadioButton();
+        jLabel10 = new javax.swing.JLabel();
         insang = new javax.swing.JFrame();
         jLabel4 = new javax.swing.JLabel();
         jrb_insang_9 = new javax.swing.JRadioButton();
@@ -233,6 +235,7 @@ public class V_Supplier extends javax.swing.JFrame {
         jrb_insang_5 = new javax.swing.JRadioButton();
         jrb_insang_3 = new javax.swing.JRadioButton();
         jrb_insang_1 = new javax.swing.JRadioButton();
+        jLabel11 = new javax.swing.JLabel();
         badan = new javax.swing.JFrame();
         jLabel5 = new javax.swing.JLabel();
         jrb_badan_9 = new javax.swing.JRadioButton();
@@ -243,6 +246,7 @@ public class V_Supplier extends javax.swing.JFrame {
         jrb_badan_5 = new javax.swing.JRadioButton();
         jrb_badan_3 = new javax.swing.JRadioButton();
         jrb_badan_1 = new javax.swing.JRadioButton();
+        jLabel12 = new javax.swing.JLabel();
         daging = new javax.swing.JFrame();
         jLabel6 = new javax.swing.JLabel();
         jrb_daging_9 = new javax.swing.JRadioButton();
@@ -252,6 +256,7 @@ public class V_Supplier extends javax.swing.JFrame {
         btn_lanjut6 = new javax.swing.JButton();
         jrb_daging_3 = new javax.swing.JRadioButton();
         jrb_daging_1 = new javax.swing.JRadioButton();
+        jLabel13 = new javax.swing.JLabel();
         tekstur = new javax.swing.JFrame();
         jLabel7 = new javax.swing.JLabel();
         jrb_tekstur_9 = new javax.swing.JRadioButton();
@@ -261,6 +266,7 @@ public class V_Supplier extends javax.swing.JFrame {
         btn_lanjut7 = new javax.swing.JButton();
         jrb_tekstur_3 = new javax.swing.JRadioButton();
         jrb_tekstur_1 = new javax.swing.JRadioButton();
+        jLabel14 = new javax.swing.JLabel();
         Bau = new javax.swing.ButtonGroup();
         Mata = new javax.swing.ButtonGroup();
         Insang = new javax.swing.ButtonGroup();
@@ -279,430 +285,275 @@ public class V_Supplier extends javax.swing.JFrame {
 
         bau.setMinimumSize(new java.awt.Dimension(1366, 800));
         bau.setSize(new java.awt.Dimension(1366, 800));
+        bau.getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
+        jLabel2.setFont(new java.awt.Font("Tahoma", 0, 24)); // NOI18N
         jLabel2.setText("Pilih Kriteria Bau Ikan");
+        bau.getContentPane().add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(760, 90, -1, -1));
 
         Bau.add(jrb_bau_9);
+        jrb_bau_9.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
         jrb_bau_9.setText("Segar, Berbau rumput laut");
+        bau.getContentPane().add(jrb_bau_9, new org.netbeans.lib.awtextra.AbsoluteConstraints(660, 170, -1, -1));
 
         Bau.add(jrb_bau_8);
+        jrb_bau_8.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
         jrb_bau_8.setText("Segar, bau rumput laut mulai berkurang.");
+        bau.getContentPane().add(jrb_bau_8, new org.netbeans.lib.awtextra.AbsoluteConstraints(660, 210, -1, -1));
 
         Bau.add(jrb_bau_7);
+        jrb_bau_7.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
         jrb_bau_7.setText("Tawar, Netral.");
+        bau.getContentPane().add(jrb_bau_7, new org.netbeans.lib.awtextra.AbsoluteConstraints(660, 250, -1, -1));
 
         Bau.add(jrb_bau_3);
+        jrb_bau_3.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
         jrb_bau_3.setText("Berbau susu asam atau seperti susu kental.");
+        bau.getContentPane().add(jrb_bau_3, new org.netbeans.lib.awtextra.AbsoluteConstraints(660, 330, -1, -1));
 
         Bau.add(jrb_bau_5);
+        jrb_bau_5.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
         jrb_bau_5.setText("Berbau susu, belum ada bau asam, ada bau seperti ikan asin.");
+        bau.getContentPane().add(jrb_bau_5, new org.netbeans.lib.awtextra.AbsoluteConstraints(660, 290, -1, -1));
 
         Bau.add(jrb_bau_1);
+        jrb_bau_1.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
         jrb_bau_1.setText("Berbau seperti kentang rebus atau seperti logam.");
+        bau.getContentPane().add(jrb_bau_1, new org.netbeans.lib.awtextra.AbsoluteConstraints(660, 370, -1, -1));
 
+        btn_lanjut2.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
         btn_lanjut2.setText("Lanjut");
+        bau.getContentPane().add(btn_lanjut2, new org.netbeans.lib.awtextra.AbsoluteConstraints(830, 460, -1, -1));
 
-        javax.swing.GroupLayout bauLayout = new javax.swing.GroupLayout(bau.getContentPane());
-        bau.getContentPane().setLayout(bauLayout);
-        bauLayout.setHorizontalGroup(
-            bauLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(bauLayout.createSequentialGroup()
-                .addGroup(bauLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(bauLayout.createSequentialGroup()
-                        .addGap(430, 430, 430)
-                        .addGroup(bauLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                            .addComponent(jrb_bau_5)
-                            .addComponent(jrb_bau_9, javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jrb_bau_8, javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jrb_bau_7, javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jrb_bau_3, javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jrb_bau_1, javax.swing.GroupLayout.Alignment.LEADING)))
-                    .addGroup(bauLayout.createSequentialGroup()
-                        .addGap(536, 536, 536)
-                        .addComponent(jLabel2))
-                    .addGroup(bauLayout.createSequentialGroup()
-                        .addGap(558, 558, 558)
-                        .addComponent(btn_lanjut2)))
-                .addContainerGap(557, Short.MAX_VALUE))
-        );
-        bauLayout.setVerticalGroup(
-            bauLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(bauLayout.createSequentialGroup()
-                .addGap(90, 90, 90)
-                .addComponent(jLabel2)
-                .addGap(54, 54, 54)
-                .addComponent(jrb_bau_9)
-                .addGap(18, 18, 18)
-                .addComponent(jrb_bau_8)
-                .addGap(20, 20, 20)
-                .addComponent(jrb_bau_7)
-                .addGap(18, 18, 18)
-                .addComponent(jrb_bau_5)
-                .addGap(18, 18, 18)
-                .addComponent(jrb_bau_3)
-                .addGap(18, 18, 18)
-                .addComponent(jrb_bau_1)
-                .addGap(18, 18, 18)
-                .addComponent(btn_lanjut2)
-                .addContainerGap(355, Short.MAX_VALUE))
-        );
+        jLabel9.setIcon(new javax.swing.ImageIcon(getClass().getResource("/image/supp.jpg"))); // NOI18N
+        bau.getContentPane().add(jLabel9, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, -1, -1));
 
         mata.setSize(new java.awt.Dimension(1366, 800));
+        mata.getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
+        jLabel3.setFont(new java.awt.Font("Tahoma", 0, 24)); // NOI18N
         jLabel3.setText("Pilih Kriteria Mata Ikan");
+        mata.getContentPane().add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(730, 70, -1, -1));
 
         Mata.add(jrb_mata_9);
+        jrb_mata_9.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
         jrb_mata_9.setText("Cerah, bola mata menonjol, kornea jernih");
+        mata.getContentPane().add(jrb_mata_9, new org.netbeans.lib.awtextra.AbsoluteConstraints(560, 210, -1, -1));
 
         Mata.add(jrb_mata_8);
+        jrb_mata_8.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
         jrb_mata_8.setText("Cerah, bola mata rata, kornea jernih");
+        mata.getContentPane().add(jrb_mata_8, new org.netbeans.lib.awtextra.AbsoluteConstraints(560, 160, -1, -1));
 
         Mata.add(jrb_mata_7);
+        jrb_mata_7.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
         jrb_mata_7.setText("Agak cerah, bola mata rata, pupil agak keabu-abuan, kornea agak keruh ");
+        mata.getContentPane().add(jrb_mata_7, new org.netbeans.lib.awtextra.AbsoluteConstraints(560, 250, -1, -1));
 
         Mata.add(jrb_mata_6);
+        jrb_mata_6.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
         jrb_mata_6.setText("Bola mata agak cekung, pupil berubah keabu-abuan, kornea agak keruh. ");
+        mata.getContentPane().add(jrb_mata_6, new org.netbeans.lib.awtextra.AbsoluteConstraints(560, 290, -1, -1));
 
+        btn_lanjut3.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
         btn_lanjut3.setText("lanjut");
+        mata.getContentPane().add(btn_lanjut3, new org.netbeans.lib.awtextra.AbsoluteConstraints(790, 490, -1, -1));
 
+        jrb_mata_5.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
         jrb_mata_5.setText("Bola mata agak cekung, pupil keabu-abuan, kornea agak keruh. ");
+        mata.getContentPane().add(jrb_mata_5, new org.netbeans.lib.awtextra.AbsoluteConstraints(560, 330, -1, -1));
 
+        jrb_mata_3.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
         jrb_mata_3.setText("Bola mata cekung, pupil mulai berubah menjadi putihsusu, kornea keruh.");
+        mata.getContentPane().add(jrb_mata_3, new org.netbeans.lib.awtextra.AbsoluteConstraints(560, 370, -1, -1));
 
+        jrb_mata_1.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
         jrb_mata_1.setText("Bola mata cekung, pupil mulai berubah menjadi putihsusu, kornea keruh.");
+        mata.getContentPane().add(jrb_mata_1, new org.netbeans.lib.awtextra.AbsoluteConstraints(560, 410, -1, -1));
 
-        javax.swing.GroupLayout mataLayout = new javax.swing.GroupLayout(mata.getContentPane());
-        mata.getContentPane().setLayout(mataLayout);
-        mataLayout.setHorizontalGroup(
-            mataLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(mataLayout.createSequentialGroup()
-                .addGroup(mataLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(mataLayout.createSequentialGroup()
-                        .addGap(616, 616, 616)
-                        .addComponent(jLabel3))
-                    .addGroup(mataLayout.createSequentialGroup()
-                        .addGap(368, 368, 368)
-                        .addGroup(mataLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jrb_mata_8)
-                            .addComponent(jrb_mata_9)
-                            .addComponent(jrb_mata_7)
-                            .addComponent(jrb_mata_6)
-                            .addComponent(jrb_mata_5)
-                            .addComponent(jrb_mata_3)
-                            .addComponent(jrb_mata_1)))
-                    .addGroup(mataLayout.createSequentialGroup()
-                        .addGap(559, 559, 559)
-                        .addComponent(btn_lanjut3)))
-                .addContainerGap(555, Short.MAX_VALUE))
-        );
-        mataLayout.setVerticalGroup(
-            mataLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(mataLayout.createSequentialGroup()
-                .addGap(96, 96, 96)
-                .addComponent(jLabel3)
-                .addGap(47, 47, 47)
-                .addComponent(jrb_mata_9)
-                .addGap(18, 18, 18)
-                .addComponent(jrb_mata_8)
-                .addGap(18, 18, 18)
-                .addComponent(jrb_mata_7)
-                .addGap(18, 18, 18)
-                .addComponent(jrb_mata_6)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(jrb_mata_5)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(jrb_mata_3)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(jrb_mata_1)
-                .addGap(44, 44, 44)
-                .addComponent(btn_lanjut3)
-                .addContainerGap(328, Short.MAX_VALUE))
-        );
+        jLabel10.setIcon(new javax.swing.ImageIcon(getClass().getResource("/image/supp.jpg"))); // NOI18N
+        mata.getContentPane().add(jLabel10, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, -1, -1));
 
         insang.setSize(new java.awt.Dimension(1366, 800));
+        insang.getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
+        jLabel4.setFont(new java.awt.Font("Tahoma", 0, 24)); // NOI18N
         jLabel4.setText("Pilih Kriteria Kenampakan Insang Ikan");
+        insang.getContentPane().add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(680, 70, -1, -1));
 
         Insang.add(jrb_insang_9);
+        jrb_insang_9.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
         jrb_insang_9.setText("Warna merah cemerlang, tanpa lendir");
+        insang.getContentPane().add(jrb_insang_9, new org.netbeans.lib.awtextra.AbsoluteConstraints(630, 150, -1, -1));
 
         Insang.add(jrb_insang_8);
+        jrb_insang_8.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
         jrb_insang_8.setText("Warna merah kurang cemerlang, tanpa lendir.");
+        insang.getContentPane().add(jrb_insang_8, new org.netbeans.lib.awtextra.AbsoluteConstraints(630, 190, -1, -1));
 
         Insang.add(jrb_insang_7);
+        jrb_insang_7.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
         jrb_insang_7.setText("Warna merah agak kusam, tanpa lendir.");
+        insang.getContentPane().add(jrb_insang_7, new org.netbeans.lib.awtextra.AbsoluteConstraints(630, 230, -1, -1));
 
         Insang.add(jrb_insang_6);
+        jrb_insang_6.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
         jrb_insang_6.setText("Merah agak kusam, sedikit lendir");
+        insang.getContentPane().add(jrb_insang_6, new org.netbeans.lib.awtextra.AbsoluteConstraints(630, 270, -1, -1));
 
+        btn_lanjut4.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
         btn_lanjut4.setText("lanjut");
+        insang.getContentPane().add(btn_lanjut4, new org.netbeans.lib.awtextra.AbsoluteConstraints(850, 470, -1, -1));
 
         Insang.add(jrb_insang_5);
+        jrb_insang_5.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
         jrb_insang_5.setText("Mulai ada diskolorasi, merah kecoklatan, sedikit lendir, tanpa lendir.");
+        insang.getContentPane().add(jrb_insang_5, new org.netbeans.lib.awtextra.AbsoluteConstraints(630, 310, -1, -1));
 
+        jrb_insang_3.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
         jrb_insang_3.setText("Warna merah coklat, lendir tebal");
+        insang.getContentPane().add(jrb_insang_3, new org.netbeans.lib.awtextra.AbsoluteConstraints(630, 350, -1, -1));
 
         Insang.add(jrb_insang_1);
+        jrb_insang_1.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
         jrb_insang_1.setText("Warna merah coklat ada sedikit putih, lendir tebal.");
+        insang.getContentPane().add(jrb_insang_1, new org.netbeans.lib.awtextra.AbsoluteConstraints(630, 390, -1, -1));
 
-        javax.swing.GroupLayout insangLayout = new javax.swing.GroupLayout(insang.getContentPane());
-        insang.getContentPane().setLayout(insangLayout);
-        insangLayout.setHorizontalGroup(
-            insangLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(insangLayout.createSequentialGroup()
-                .addGroup(insangLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(insangLayout.createSequentialGroup()
-                        .addGap(616, 616, 616)
-                        .addComponent(jLabel4))
-                    .addGroup(insangLayout.createSequentialGroup()
-                        .addGap(368, 368, 368)
-                        .addGroup(insangLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jrb_insang_5)
-                            .addComponent(jrb_insang_8)
-                            .addComponent(jrb_insang_9)
-                            .addComponent(jrb_insang_7)
-                            .addComponent(jrb_insang_6)
-                            .addComponent(jrb_insang_3)
-                            .addComponent(jrb_insang_1)))
-                    .addGroup(insangLayout.createSequentialGroup()
-                        .addGap(562, 562, 562)
-                        .addComponent(btn_lanjut4)))
-                .addContainerGap(535, Short.MAX_VALUE))
-        );
-        insangLayout.setVerticalGroup(
-            insangLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(insangLayout.createSequentialGroup()
-                .addGap(96, 96, 96)
-                .addComponent(jLabel4)
-                .addGap(47, 47, 47)
-                .addComponent(jrb_insang_9)
-                .addGap(18, 18, 18)
-                .addComponent(jrb_insang_8)
-                .addGap(18, 18, 18)
-                .addComponent(jrb_insang_7)
-                .addGap(18, 18, 18)
-                .addComponent(jrb_insang_6)
-                .addGap(18, 18, 18)
-                .addComponent(jrb_insang_5)
-                .addGap(18, 18, 18)
-                .addComponent(jrb_insang_3)
-                .addGap(18, 18, 18)
-                .addComponent(jrb_insang_1)
-                .addGap(27, 27, 27)
-                .addComponent(btn_lanjut4)
-                .addContainerGap(306, Short.MAX_VALUE))
-        );
+        jLabel11.setIcon(new javax.swing.ImageIcon(getClass().getResource("/image/supp.jpg"))); // NOI18N
+        insang.getContentPane().add(jLabel11, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, -1, -1));
 
         badan.setSize(new java.awt.Dimension(1366, 800));
+        badan.getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
+        jLabel5.setFont(new java.awt.Font("Tahoma", 0, 24)); // NOI18N
         jLabel5.setText("Pilih Kriteria lendir dan permukaan badan Ikan");
+        badan.getContentPane().add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(616, 96, -1, -1));
 
         Badan.add(jrb_badan_9);
+        jrb_badan_9.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
         jrb_badan_9.setText("Lapisan lendir jernih, transparan, mengkilat cerah.");
+        badan.getContentPane().add(jrb_badan_9, new org.netbeans.lib.awtextra.AbsoluteConstraints(570, 190, -1, -1));
 
         Badan.add(jrb_badan_8);
+        jrb_badan_8.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
         jrb_badan_8.setText("Lapisan lendir jernih, transparan, cerah, belum ada perubahan warna.");
+        badan.getContentPane().add(jrb_badan_8, new org.netbeans.lib.awtextra.AbsoluteConstraints(570, 230, -1, -1));
 
         Badan.add(jrb_badan_7);
+        jrb_badan_7.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
         jrb_badan_7.setText("Lapisan lendir mulai agak keruh, warna agak putih, kurang transparan.");
+        badan.getContentPane().add(jrb_badan_7, new org.netbeans.lib.awtextra.AbsoluteConstraints(570, 270, -1, -1));
 
         Badan.add(jrb_badan_6);
+        jrb_badan_6.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
         jrb_badan_6.setText("Lapisan lendir mulai keruh, warna putih agak kusam, kurang transparan.");
+        badan.getContentPane().add(jrb_badan_6, new org.netbeans.lib.awtextra.AbsoluteConstraints(570, 310, -1, -1));
 
+        btn_lanjut5.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
         btn_lanjut5.setText("lanjut");
+        badan.getContentPane().add(btn_lanjut5, new org.netbeans.lib.awtextra.AbsoluteConstraints(820, 520, -1, -1));
 
         Badan.add(jrb_badan_5);
+        jrb_badan_5.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
         jrb_badan_5.setText("Lendir tebal menggumpal, mulai berubah warna putih, keruh.");
+        badan.getContentPane().add(jrb_badan_5, new org.netbeans.lib.awtextra.AbsoluteConstraints(570, 350, -1, -1));
 
         Badan.add(jrb_badan_3);
+        jrb_badan_3.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
         jrb_badan_3.setText("Lendir tebal menggumpal, berwarna putih kuning.");
+        badan.getContentPane().add(jrb_badan_3, new org.netbeans.lib.awtextra.AbsoluteConstraints(570, 390, -1, -1));
 
         Badan.add(jrb_badan_1);
+        jrb_badan_1.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
         jrb_badan_1.setText("Lendir tebal menggumpal, warna kuning kecoklatan.");
+        badan.getContentPane().add(jrb_badan_1, new org.netbeans.lib.awtextra.AbsoluteConstraints(570, 430, -1, -1));
 
-        javax.swing.GroupLayout badanLayout = new javax.swing.GroupLayout(badan.getContentPane());
-        badan.getContentPane().setLayout(badanLayout);
-        badanLayout.setHorizontalGroup(
-            badanLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(badanLayout.createSequentialGroup()
-                .addGroup(badanLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(badanLayout.createSequentialGroup()
-                        .addGap(616, 616, 616)
-                        .addComponent(jLabel5))
-                    .addGroup(badanLayout.createSequentialGroup()
-                        .addGap(368, 368, 368)
-                        .addGroup(badanLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jrb_badan_8)
-                            .addComponent(jrb_badan_9)
-                            .addComponent(jrb_badan_7)
-                            .addComponent(jrb_badan_6)
-                            .addComponent(jrb_badan_5)
-                            .addComponent(jrb_badan_3)
-                            .addComponent(jrb_badan_1))))
-                .addContainerGap(486, Short.MAX_VALUE))
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, badanLayout.createSequentialGroup()
-                .addGap(0, 0, Short.MAX_VALUE)
-                .addComponent(btn_lanjut5)
-                .addGap(587, 587, 587))
-        );
-        badanLayout.setVerticalGroup(
-            badanLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(badanLayout.createSequentialGroup()
-                .addGap(96, 96, 96)
-                .addComponent(jLabel5)
-                .addGap(47, 47, 47)
-                .addComponent(jrb_badan_9)
-                .addGap(18, 18, 18)
-                .addComponent(jrb_badan_8)
-                .addGap(18, 18, 18)
-                .addComponent(jrb_badan_7)
-                .addGap(18, 18, 18)
-                .addComponent(jrb_badan_6)
-                .addGap(18, 18, 18)
-                .addComponent(jrb_badan_5)
-                .addGap(18, 18, 18)
-                .addComponent(jrb_badan_3)
-                .addGap(18, 18, 18)
-                .addComponent(jrb_badan_1)
-                .addGap(44, 44, 44)
-                .addComponent(btn_lanjut5)
-                .addContainerGap(289, Short.MAX_VALUE))
-        );
+        jLabel12.setIcon(new javax.swing.ImageIcon(getClass().getResource("/image/supp.jpg"))); // NOI18N
+        badan.getContentPane().add(jLabel12, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, -1, -1));
 
         daging.setSize(new java.awt.Dimension(1366, 800));
+        daging.getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
+        jLabel6.setFont(new java.awt.Font("Tahoma", 0, 24)); // NOI18N
         jLabel6.setText("Pilih Kriteria tekstur daging pada Ikan");
+        daging.getContentPane().add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(610, 150, -1, -1));
 
         Daging.add(jrb_daging_9);
+        jrb_daging_9.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
         jrb_daging_9.setText("Sayatan daging sangat cemerlang, spesifik jenis, tidak ada pemerahan sepanjang tulang belakang, dinding perut daging utuh.");
+        daging.getContentPane().add(jrb_daging_9, new org.netbeans.lib.awtextra.AbsoluteConstraints(290, 230, -1, -1));
 
         Daging.add(jrb_daging_8);
+        jrb_daging_8.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
         jrb_daging_8.setText("Sayatan daging cemerlang spesifik jenis, tidak ada pemerahan sepanjang tulang belakang, dinding perut utuh.");
+        daging.getContentPane().add(jrb_daging_8, new org.netbeans.lib.awtextra.AbsoluteConstraints(290, 280, -1, -1));
 
         Daging.add(jrb_daging_7);
+        jrb_daging_7.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
         jrb_daging_7.setText("Sayatan daging sedikit kurang cemerlang, spesifik jenis, tidak ada pemerahan sepanjang tulang belakang, dinding perut daging utuh.");
+        daging.getContentPane().add(jrb_daging_7, new org.netbeans.lib.awtextra.AbsoluteConstraints(290, 320, -1, -1));
 
         Daging.add(jrb_daging_5);
+        jrb_daging_5.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
         jrb_daging_5.setText("Sayatan daging mulai pudar, banyak pemerahan sepanjang tulang belakang, dinding perut agak lunak.");
+        daging.getContentPane().add(jrb_daging_5, new org.netbeans.lib.awtextra.AbsoluteConstraints(290, 360, -1, -1));
 
+        btn_lanjut6.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
         btn_lanjut6.setText("lanjut");
+        daging.getContentPane().add(btn_lanjut6, new org.netbeans.lib.awtextra.AbsoluteConstraints(770, 560, -1, -1));
 
+        jrb_daging_3.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
         jrb_daging_3.setText("Sayatan daging kusam, warna merah jelas sekali sepanjang tulang belakang, dinding perut lunak.");
+        daging.getContentPane().add(jrb_daging_3, new org.netbeans.lib.awtextra.AbsoluteConstraints(290, 400, -1, -1));
 
+        jrb_daging_1.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
         jrb_daging_1.setText("Sayatan daging kusam sekali, warna merah jelas sekali sepanjang tulang belakang, dinding perut sangat lunak.");
+        daging.getContentPane().add(jrb_daging_1, new org.netbeans.lib.awtextra.AbsoluteConstraints(290, 450, -1, -1));
 
-        javax.swing.GroupLayout dagingLayout = new javax.swing.GroupLayout(daging.getContentPane());
-        daging.getContentPane().setLayout(dagingLayout);
-        dagingLayout.setHorizontalGroup(
-            dagingLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(dagingLayout.createSequentialGroup()
-                .addGroup(dagingLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(dagingLayout.createSequentialGroup()
-                        .addGap(616, 616, 616)
-                        .addComponent(jLabel6))
-                    .addGroup(dagingLayout.createSequentialGroup()
-                        .addGap(368, 368, 368)
-                        .addGroup(dagingLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jrb_daging_8)
-                            .addComponent(jrb_daging_9)
-                            .addComponent(jrb_daging_7)
-                            .addComponent(jrb_daging_5)
-                            .addComponent(jrb_daging_3)
-                            .addComponent(jrb_daging_1))))
-                .addContainerGap(213, Short.MAX_VALUE))
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, dagingLayout.createSequentialGroup()
-                .addGap(0, 0, Short.MAX_VALUE)
-                .addComponent(btn_lanjut6)
-                .addGap(614, 614, 614))
-        );
-        dagingLayout.setVerticalGroup(
-            dagingLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(dagingLayout.createSequentialGroup()
-                .addGap(96, 96, 96)
-                .addComponent(jLabel6)
-                .addGap(47, 47, 47)
-                .addComponent(jrb_daging_9)
-                .addGap(18, 18, 18)
-                .addComponent(jrb_daging_8)
-                .addGap(18, 18, 18)
-                .addComponent(jrb_daging_7)
-                .addGap(18, 18, 18)
-                .addComponent(jrb_daging_5)
-                .addGap(18, 18, 18)
-                .addComponent(jrb_daging_3)
-                .addGap(18, 18, 18)
-                .addComponent(jrb_daging_1)
-                .addGap(99, 99, 99)
-                .addComponent(btn_lanjut6)
-                .addContainerGap(277, Short.MAX_VALUE))
-        );
+        jLabel13.setIcon(new javax.swing.ImageIcon(getClass().getResource("/image/supp.jpg"))); // NOI18N
+        daging.getContentPane().add(jLabel13, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, -1, -1));
 
         tekstur.setSize(new java.awt.Dimension(1366, 800));
+        tekstur.getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
+        jLabel7.setFont(new java.awt.Font("Tahoma", 0, 24)); // NOI18N
         jLabel7.setText("Pilih Kriteria Keadaan Daging");
+        tekstur.getContentPane().add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(710, 100, -1, -1));
 
         Perut.add(jrb_tekstur_9);
+        jrb_tekstur_9.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
         jrb_tekstur_9.setText("Padat, elastis bila ditekan dengan jari, sulit menyobek daging dari tulang belakang.");
+        tekstur.getContentPane().add(jrb_tekstur_9, new org.netbeans.lib.awtextra.AbsoluteConstraints(460, 160, -1, -1));
 
         Perut.add(jrb_tekstur_8);
+        jrb_tekstur_8.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
         jrb_tekstur_8.setText("Agak padat, elastis bila ditekan dengan jari, sulit menyobek daging dari tulang belakang.");
+        tekstur.getContentPane().add(jrb_tekstur_8, new org.netbeans.lib.awtextra.AbsoluteConstraints(460, 200, -1, -1));
 
         Perut.add(jrb_tekstur_7);
+        jrb_tekstur_7.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
         jrb_tekstur_7.setText("Agak padat, agak elastis bila ditekan dengan jari, sulit menyobek daging dari tulang belakang.");
+        tekstur.getContentPane().add(jrb_tekstur_7, new org.netbeans.lib.awtextra.AbsoluteConstraints(460, 240, -1, -1));
 
         Perut.add(jrb_tekstur_5);
+        jrb_tekstur_5.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
         jrb_tekstur_5.setText("Agak lunak, kurang elastis bila ditekan dengan jari, agak mudah menyobek daging dari tulang belakang.");
+        tekstur.getContentPane().add(jrb_tekstur_5, new org.netbeans.lib.awtextra.AbsoluteConstraints(460, 280, -1, -1));
 
+        btn_lanjut7.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
         btn_lanjut7.setText("lanjut");
+        tekstur.getContentPane().add(btn_lanjut7, new org.netbeans.lib.awtextra.AbsoluteConstraints(810, 450, -1, -1));
 
+        jrb_tekstur_3.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
         jrb_tekstur_3.setText("Lunak, bekas jari terlihat bila ditekan, mudah menyobek daging dari tulang belakang");
+        tekstur.getContentPane().add(jrb_tekstur_3, new org.netbeans.lib.awtextra.AbsoluteConstraints(460, 320, -1, -1));
 
+        jrb_tekstur_1.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
         jrb_tekstur_1.setText("Sangat lunak, bekas jari tidak hilang bila ditekan, mudah sekali menyobek daging dari tulang belakang.");
+        tekstur.getContentPane().add(jrb_tekstur_1, new org.netbeans.lib.awtextra.AbsoluteConstraints(460, 360, -1, -1));
 
-        javax.swing.GroupLayout teksturLayout = new javax.swing.GroupLayout(tekstur.getContentPane());
-        tekstur.getContentPane().setLayout(teksturLayout);
-        teksturLayout.setHorizontalGroup(
-            teksturLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(teksturLayout.createSequentialGroup()
-                .addGroup(teksturLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(teksturLayout.createSequentialGroup()
-                        .addGap(621, 621, 621)
-                        .addComponent(jLabel7))
-                    .addGroup(teksturLayout.createSequentialGroup()
-                        .addGap(368, 368, 368)
-                        .addGroup(teksturLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jrb_tekstur_1)
-                            .addComponent(jrb_tekstur_8)
-                            .addComponent(jrb_tekstur_9)
-                            .addComponent(jrb_tekstur_7)
-                            .addComponent(jrb_tekstur_5)
-                            .addComponent(jrb_tekstur_3)))
-                    .addGroup(teksturLayout.createSequentialGroup()
-                        .addGap(554, 554, 554)
-                        .addComponent(btn_lanjut7)))
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-        );
-        teksturLayout.setVerticalGroup(
-            teksturLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(teksturLayout.createSequentialGroup()
-                .addGap(97, 97, 97)
-                .addComponent(jLabel7)
-                .addGap(46, 46, 46)
-                .addComponent(jrb_tekstur_9)
-                .addGap(18, 18, 18)
-                .addComponent(jrb_tekstur_8)
-                .addGap(18, 18, 18)
-                .addComponent(jrb_tekstur_7)
-                .addGap(18, 18, 18)
-                .addComponent(jrb_tekstur_5)
-                .addGap(18, 18, 18)
-                .addComponent(jrb_tekstur_3)
-                .addGap(18, 18, 18)
-                .addComponent(jrb_tekstur_1)
-                .addGap(34, 34, 34)
-                .addComponent(btn_lanjut7)
-                .addContainerGap(342, Short.MAX_VALUE))
-        );
+        jLabel14.setIcon(new javax.swing.ImageIcon(getClass().getResource("/image/supp.jpg"))); // NOI18N
+        tekstur.getContentPane().add(jLabel14, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, -1, -1));
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setSize(new java.awt.Dimension(1366, 768));
@@ -736,6 +587,9 @@ public class V_Supplier extends javax.swing.JFrame {
 
         jTabbedPane1.addTab("Penawaran Ikan Anda", jPanel1);
 
+        jt_jumlahIkan.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
+
+        jLabel1.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
         jLabel1.setText("Masukkan Kuantitas Ikan");
 
         btn_lanjut1.setText("Lanjut");
@@ -745,29 +599,29 @@ public class V_Supplier extends javax.swing.JFrame {
         jPanel2Layout.setHorizontalGroup(
             jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel2Layout.createSequentialGroup()
-                .addGap(431, 431, 431)
-                .addComponent(btn_lanjut1)
+                .addGap(367, 367, 367)
+                .addComponent(jLabel1)
                 .addGap(0, 0, Short.MAX_VALUE))
             .addGroup(jPanel2Layout.createSequentialGroup()
                 .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(jPanel2Layout.createSequentialGroup()
-                        .addGap(348, 348, 348)
+                        .addGap(351, 351, 351)
                         .addComponent(jt_jumlahIkan, javax.swing.GroupLayout.PREFERRED_SIZE, 232, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addGroup(jPanel2Layout.createSequentialGroup()
-                        .addGap(395, 395, 395)
-                        .addComponent(jLabel1)))
-                .addContainerGap(355, Short.MAX_VALUE))
+                        .addGap(430, 430, 430)
+                        .addComponent(btn_lanjut1)))
+                .addContainerGap(352, Short.MAX_VALUE))
         );
         jPanel2Layout.setVerticalGroup(
             jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel2Layout.createSequentialGroup()
                 .addGap(229, 229, 229)
                 .addComponent(jLabel1)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGap(18, 18, 18)
                 .addComponent(jt_jumlahIkan, javax.swing.GroupLayout.PREFERRED_SIZE, 97, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGap(18, 18, 18)
                 .addComponent(btn_lanjut1)
-                .addContainerGap(322, Short.MAX_VALUE))
+                .addContainerGap(294, Short.MAX_VALUE))
         );
 
         jTabbedPane1.addTab("Tawarkan Ikan", jPanel2);
@@ -834,6 +688,11 @@ public class V_Supplier extends javax.swing.JFrame {
     private javax.swing.JFrame daging;
     private javax.swing.JFrame insang;
     private javax.swing.JLabel jLabel1;
+    private javax.swing.JLabel jLabel10;
+    private javax.swing.JLabel jLabel11;
+    private javax.swing.JLabel jLabel12;
+    private javax.swing.JLabel jLabel13;
+    private javax.swing.JLabel jLabel14;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
@@ -841,6 +700,7 @@ public class V_Supplier extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel6;
     private javax.swing.JLabel jLabel7;
     private javax.swing.JLabel jLabel8;
+    private javax.swing.JLabel jLabel9;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPanel2;
     private javax.swing.JScrollPane jScrollPane1;

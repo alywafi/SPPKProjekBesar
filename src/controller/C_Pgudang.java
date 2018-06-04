@@ -12,6 +12,8 @@ import java.text.DecimalFormat;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 import model.M_Ikan;
+import model.M_Kriteria;
+import view.V_PG_Kriteria;
 import view.V_PG_Penjualan;
 
 /**
@@ -32,6 +34,7 @@ public class C_Pgudang {
         view.setVisible(true);
         view.getTableIkan().setModel(model.getDataHariIni());
         view.getBtnBeli().addActionListener(new Beli());
+        view.getBtnKriteria().addActionListener(new KriteriaAction());
     }
 
     public void hitung() throws SQLException {
@@ -71,6 +74,20 @@ public class C_Pgudang {
             } else {
                 System.out.println("gagalsasdjk");
             }
+
+        }
+    }
+
+    private class KriteriaAction implements ActionListener {
+
+        @Override
+        public void actionPerformed(ActionEvent e) {
+            try {
+                new C_Kriteria(new V_PG_Kriteria(), new M_Kriteria(), id);
+            } catch (SQLException ex) {
+                Logger.getLogger(C_Pgudang.class.getName()).log(Level.SEVERE, null, ex);
+            }
+            view.dispose();
 
         }
     }
