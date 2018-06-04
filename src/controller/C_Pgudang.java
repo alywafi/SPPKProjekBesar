@@ -32,9 +32,13 @@ public class C_Pgudang {
         this.id = id;
         hitung();
         view.setVisible(true);
+        view.settampil(false);
+
         view.getTableIkan().setModel(model.getDataHariIni());
         view.getBtnBeli().addActionListener(new Beli());
         view.getBtnKriteria().addActionListener(new KriteriaAction());
+        view.getBtnOkBeli().addActionListener(new OkBeliAction());
+        view.getBtnBatalBeli().addActionListener(new BatalBeliAction());
     }
 
     public void hitung() throws SQLException {
@@ -78,6 +82,36 @@ public class C_Pgudang {
         }
     }
 
+    private class BatalBeliAction implements ActionListener {
+
+        @Override
+        public void actionPerformed(ActionEvent e) {
+            view.settampil(false);
+        }
+    }
+
+    private class OkBeliAction implements ActionListener {
+
+        @Override
+        public void actionPerformed(ActionEvent e) {
+            try {
+                int d[] = new int[3];
+                d[0] = Integer.valueOf(view.getIdFromTable());
+                System.out.println(d[0]);
+                d[1] = id;
+                d[2] = Integer.valueOf(view.getKuantitaskBeli().getText());
+                if (model.insertBeli(d)) {
+                    System.out.println("pembelian sukses");
+                } else {
+                    System.out.println("pembelian gagal");
+                }
+            } catch (SQLException ex) {
+                Logger.getLogger(C_Pgudang.class.getName()).log(Level.SEVERE, null, ex);
+            }
+            view.settampil(false);
+        }
+    }
+
     private class KriteriaAction implements ActionListener {
 
         @Override
@@ -96,20 +130,27 @@ public class C_Pgudang {
 
         @Override
         public void actionPerformed(ActionEvent e) {
-            int d[] = new int[2];
+            int d[] = new int[3];
             d[0] = Integer.valueOf(view.getIdFromTable());
             System.out.println(d[0]);
             d[1] = id;
-            try {
-                if (model.insertBeli(d)) {
-                    System.out.println("pembelian sukses");
-                } else {
-                    System.out.println("pembelian gagal");
+            String unit = view.getDataFromTable(4);
+            System.out.println(unit);
+            if (unit.equalsIgnoreCase("Ikan Kelompok")) {
+                view.settampil(true);
+            } else {
+                d[2] = Integer.valueOf(view.getDataFromTable(3));
+                try {
+                    if (model.insertBeli(d)) {
+                        System.out.println("pembelian sukses");
+                    } else {
+                        System.out.println("pembelian gagal");
+                    }
+                } catch (SQLException ex) {
+                    Logger.getLogger(C_Pgudang.class.getName()).log(Level.SEVERE, null, ex);
                 }
-            } catch (SQLException ex) {
-                Logger.getLogger(C_Pgudang.class.getName()).log(Level.SEVERE, null, ex);
-            }
 
+            }
         }
     }
 

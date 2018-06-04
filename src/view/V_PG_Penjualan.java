@@ -7,6 +7,7 @@ package view;
 
 import javax.swing.JButton;
 import javax.swing.JTable;
+import javax.swing.JTextField;
 
 /**
  *
@@ -21,7 +22,23 @@ public class V_PG_Penjualan extends javax.swing.JFrame {
         initComponents();
         this.setLocationRelativeTo(null);
     }
+    
+    public void settampil (boolean active) {
+        btn_BatalBeli.setVisible(active);
+        btn_OkBeli.setVisible(active);
+        Jtf_KuantitasBeli.setVisible(active);
+        jLabel2.setVisible(active);
+    }
 
+    public JButton getBtnBatalBeli () {
+        return btn_BatalBeli ;
+    }
+    public JButton getBtnOkBeli () {
+        return btn_OkBeli ;
+    }
+    public JTextField getKuantitaskBeli () {
+        return Jtf_KuantitasBeli ;
+    }
 
     public JTable getTableIkan() {
         return JTable_Ikan;
@@ -41,6 +58,9 @@ public class V_PG_Penjualan extends javax.swing.JFrame {
     public String getIdFromTable() {
         return this.JTable_Ikan.getValueAt(this.getSelectedRow(), 1).toString();
     }
+    public String getDataFromTable(int index) {
+        return this.JTable_Ikan.getValueAt(this.getSelectedRow(),index ).toString();
+    }
 
     @SuppressWarnings("unchecked")
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
@@ -51,10 +71,13 @@ public class V_PG_Penjualan extends javax.swing.JFrame {
         btn_Beli = new javax.swing.JButton();
         btn_kriteria = new javax.swing.JButton();
         btn_penjualan = new javax.swing.JButton();
+        Jtf_KuantitasBeli = new javax.swing.JTextField();
+        jLabel2 = new javax.swing.JLabel();
+        btn_OkBeli = new javax.swing.JButton();
+        btn_BatalBeli = new javax.swing.JButton();
         jLabel1 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
-        setPreferredSize(new java.awt.Dimension(1366, 768));
         setSize(new java.awt.Dimension(1366, 768));
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
@@ -74,19 +97,27 @@ public class V_PG_Penjualan extends javax.swing.JFrame {
         getContentPane().add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(390, 90, 930, -1));
 
         btn_Beli.setText("Beli");
-        getContentPane().add(btn_Beli, new org.netbeans.lib.awtextra.AbsoluteConstraints(760, 580, 122, 49));
+        getContentPane().add(btn_Beli, new org.netbeans.lib.awtextra.AbsoluteConstraints(390, 540, 200, 49));
 
         btn_kriteria.setIcon(new javax.swing.ImageIcon(getClass().getResource("/image/btn_Kriteia.png"))); // NOI18N
         btn_kriteria.setBorderPainted(false);
         btn_kriteria.setContentAreaFilled(false);
-        btn_kriteria.setOpaque(false);
         getContentPane().add(btn_kriteria, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 460, -1, -1));
 
         btn_penjualan.setIcon(new javax.swing.ImageIcon(getClass().getResource("/image/btn_Penjualan.png"))); // NOI18N
         btn_penjualan.setBorderPainted(false);
         btn_penjualan.setContentAreaFilled(false);
-        btn_penjualan.setOpaque(false);
         getContentPane().add(btn_penjualan, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 540, -1, -1));
+        getContentPane().add(Jtf_KuantitasBeli, new org.netbeans.lib.awtextra.AbsoluteConstraints(470, 610, 120, 40));
+
+        jLabel2.setText("Kuantitas");
+        getContentPane().add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(390, 620, -1, -1));
+
+        btn_OkBeli.setText("Ok");
+        getContentPane().add(btn_OkBeli, new org.netbeans.lib.awtextra.AbsoluteConstraints(390, 660, 80, 50));
+
+        btn_BatalBeli.setText("Batal");
+        getContentPane().add(btn_BatalBeli, new org.netbeans.lib.awtextra.AbsoluteConstraints(513, 660, 80, 50));
 
         jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/image/gudang.jpg"))); // NOI18N
         getContentPane().add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, -1, -1));
@@ -132,10 +163,14 @@ public class V_PG_Penjualan extends javax.swing.JFrame {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JTable JTable_Ikan;
+    private javax.swing.JTextField Jtf_KuantitasBeli;
+    private javax.swing.JButton btn_BatalBeli;
     private javax.swing.JButton btn_Beli;
+    private javax.swing.JButton btn_OkBeli;
     private javax.swing.JButton btn_kriteria;
     private javax.swing.JButton btn_penjualan;
     private javax.swing.JLabel jLabel1;
+    private javax.swing.JLabel jLabel2;
     private javax.swing.JScrollPane jScrollPane1;
     // End of variables declaration//GEN-END:variables
 

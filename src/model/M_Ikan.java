@@ -44,14 +44,14 @@ public class M_Ikan {
     }
 
     public DefaultTableModel getDataHariIni() throws SQLException {
-        String kolom[] = {"ID", "ID Penjual", "tanggal", "Jumlah", "bau", "mata", "insang", "badan", "daging", "perut", "skor"};
+        String kolom[] = {"ID", "ID Penjual", "tanggal", "Jumlah", "unit", "bau", "mata", "insang", "badan", "daging", "perut", "skor"};
         DefaultTableModel table = new DefaultTableModel(null, kolom);
 
         SimpleDateFormat date = new SimpleDateFormat("dd/MM/yyyy");
         Date a = new Date();
         String tang = date.format(a);
 
-        String query = "select * from ikan where tanggal = '" + tang + "'";
+        String query = "select * from ikan where tanggal = '" + tang + "' order by skor desc";
         ResultSet rs = con.getResult(query);
 
         while (rs.next()) {
@@ -94,7 +94,7 @@ public class M_Ikan {
     }
 
     public boolean updateSkor(Float skor, int id) throws SQLException {
-        String query = "UPDATE `ikan` SET `Skor` = " + skor + " WHERE Ikan_ID = " + id ;
+        String query = "UPDATE `ikan` SET `Skor` = " + skor + " WHERE Ikan_ID = " + id;
         try {
             con.executeQuery(query);
             return true;
@@ -121,11 +121,11 @@ public class M_Ikan {
         return table;
     }
 
-    public boolean insertData(float data[]) throws SQLException {
+    public boolean insertData(float data[], String unit) throws SQLException {
         SimpleDateFormat date = new SimpleDateFormat("dd/MM/yyyy");
         Date a = new Date();
         String tang = date.format(a);
-        String query = "INSERT INTO `ikan`(`User_ID`,`tanggal`,`jumlah`, `Bau`, `Mata` , `insang` , `Badan` , `daging` , `perut` ) VALUES ('" + data[0] + "','" + tang + "','" + data[2]
+        String query = "INSERT INTO `ikan`(`unit`,`User_ID`,`tanggal`,`jumlah`, `Bau`, `Mata` , `insang` , `Badan` , `daging` , `perut` ) VALUES ('" + unit + "','" + data[0] + "','" + tang + "','" + data[2]
                 + "','" + data[3] + "','" + data[4] + "','" + data[5] + "','" + data[6] + "','" + data[7] + "','" + data[8] + "')";
         try {
             con.executeQuery(query);
@@ -136,12 +136,34 @@ public class M_Ikan {
     }
 
     public boolean insertBeli(int data[]) throws SQLException {
-        String query = "INSERT INTO `transaksi`(`Supplier`,`pgudang`) VALUES ('" + data[0] + "','" + data[1] + "')";
+        String query = "INSERT INTO `transaksi`(`Supplier`,`pgudang`,`kuantitas`) VALUES ('" + data[0] + "','" + data[1] + "','" + data[2] + "')";
         try {
             con.executeQuery(query);
             return true;
         } catch (Exception e) {
             return false;
         }
+    }
+
+    public DefaultTableModel getDataPembelianHariIni(int id) throws SQLException {
+        String kolom[] = {"ID", "Supplier", "pgudang", "kuantitas"};
+        DefaultTableModel table = new DefaultTableModel(null, kolom);
+
+        SimpleDateFormat date = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
+        Date a = new Date();
+        String tang = date.format(a);
+
+        String query = "select * from transaksi where Supplier = " + id ;
+        ResultSet rs = con.getResult(query);
+
+        while (rs.next()) {
+            String row[] = new String[kolom.length];
+            for (int i = 0; i < row.length; i++) {
+                row[i] = rs.getString(i + 1);
+            }
+            table.addRow(row);
+        }
+
+        return table;
     }
 }

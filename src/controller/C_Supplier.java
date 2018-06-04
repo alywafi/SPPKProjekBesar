@@ -23,7 +23,8 @@ public class C_Supplier {
     V_Supplier view;
     M_Ikan model;
     int idsup;
-    public float ikan[] = new float[9];
+    public float ikan[] = new float[10];
+    public String unit ;
 
     public C_Supplier(V_Supplier v, M_Ikan m, int id) throws SQLException {
         this.view = v;
@@ -34,6 +35,8 @@ public class C_Supplier {
         view.setVisible(true);
         
         view.getTable().setModel(model.getDataWithID(id));
+        
+        view.getTablePembelian().setModel(model.getDataPembelianHariIni(id));
 
         view.getBtnnext1().addActionListener(new lanjut1());
         view.getBtnnext2().addActionListener(new lanjut2());
@@ -54,7 +57,7 @@ public class C_Supplier {
             view.getKuantitas().setText(" ");
 
             try {
-                if (model.insertData(ikan)) {
+                if (model.insertData(ikan,unit)) {
                     System.out.println("sukses");   
                 }else {
                     System.out.println("gagal");
@@ -122,6 +125,7 @@ public class C_Supplier {
         @Override
         public void actionPerformed(ActionEvent e) {
             ikan[2] = Integer.valueOf(view.getKuantitas().getText());
+            unit = (String) view.getUnit().getSelectedItem();
             System.out.println(ikan[2]);
             view.getFrameBau().setVisible(true);
         }
