@@ -23,7 +23,7 @@ public class C_Supplier {
     V_Supplier view;
     M_Ikan model;
     int idsup;
-    public float ikan[] = new float[10];
+    public float ikan[] = new float[9];
 
     public C_Supplier(V_Supplier v, M_Ikan m, int id) throws SQLException {
         this.view = v;
@@ -50,8 +50,7 @@ public class C_Supplier {
         @Override
         public void actionPerformed(ActionEvent e) {
             view.getFramePerut().dispose();
-            ikan[8] = (float) (view.getperut() * 0.1 * 16);
-            ikan[9] = ikan[3] + ikan[4] + ikan[5] + ikan[6] + ikan[7] + ikan[8];
+            ikan[8] = (float) (view.gettekstur() );
             view.getKuantitas().setText(" ");
 
             try {
@@ -72,7 +71,7 @@ public class C_Supplier {
         @Override
         public void actionPerformed(ActionEvent e) {
             view.getFrameDaging().dispose();
-            ikan[7] = (float) (view.getdaging() * 0.1 * 16);
+            ikan[7] = (float) (view.getdaging() );
             view.getFramePerut().setVisible(true);
         }
     }
@@ -82,7 +81,7 @@ public class C_Supplier {
         @Override
         public void actionPerformed(ActionEvent e) {
             view.getFrameBadan().dispose();
-            ikan[6] = (float) (view.getbadan() * 0.1 * 16);
+            ikan[6] = (float) (view.getbadan());
             view.getFrameDaging().setVisible(true);
         }
     }
@@ -92,7 +91,7 @@ public class C_Supplier {
         @Override
         public void actionPerformed(ActionEvent e) {
             view.getFrameInsang().dispose();
-            ikan[5] = (float) (view.getinsang() * 0.1 * 16);
+            ikan[5] = (float) (view.getinsang());
             view.getFrameBadan().setVisible(true);
         }
     }
@@ -102,7 +101,7 @@ public class C_Supplier {
         @Override
         public void actionPerformed(ActionEvent e) {
             view.getFrameMata().dispose();
-            ikan[4] = (float) (view.getmata() * 0.1 * 16);
+            ikan[4] = (float) (view.getmata());
             view.getFrameInsang().setVisible(true);
         }
     }
@@ -112,7 +111,7 @@ public class C_Supplier {
         @Override
         public void actionPerformed(ActionEvent e) {
             view.getFrameBau().dispose();
-            ikan[3] = (float) (view.getbau() * 0.1 * 20);
+            ikan[3] = (float) (view.getbau());
             System.out.println(ikan[3]);
             view.getFrameMata().setVisible(true);
         }

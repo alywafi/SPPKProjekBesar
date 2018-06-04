@@ -22,5 +22,7 @@ public class C_S_InputDataJual {
         this.view = v;
         this.model = m ;
         this.ID = id ;
+        
+        view.setEnabled(true);
     }
 }

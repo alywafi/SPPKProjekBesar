@@ -19,19 +19,13 @@
                   <Group type="103" groupAlignment="0" attributes="0">
                       <Group type="102" attributes="0">
                           <EmptySpace min="-2" pref="430" max="-2" attributes="0"/>
-                          <Group type="103" groupAlignment="0" attributes="0">
-                              <Component id="jrb_0" min="-2" max="-2" attributes="0"/>
-                              <Component id="jrb_5" min="-2" max="-2" attributes="0"/>
-                              <Group type="103" groupAlignment="1" attributes="0">
-                                  <Component id="jrb_7" alignment="1" min="-2" max="-2" attributes="0"/>
-                                  <Component id="jrb_10" alignment="0" min="-2" max="-2" attributes="0"/>
-                                  <Component id="jrb_9" alignment="0" min="-2" max="-2" attributes="0"/>
-                                  <Component id="jrb_8" alignment="0" min="-2" max="-2" attributes="0"/>
-                                  <Component id="jrb_6" alignment="0" min="-2" max="-2" attributes="0"/>
-                              </Group>
-                              <Component id="jrb_4" alignment="0" min="-2" max="-2" attributes="0"/>
-                              <Component id="jrb_3" alignment="0" min="-2" max="-2" attributes="0"/>
-                              <Component id="jrb_2" alignment="0" min="-2" max="-2" attributes="0"/>
+                          <Group type="103" groupAlignment="1" attributes="0">
+                              <Component id="jrb_bau_5" alignment="1" min="-2" max="-2" attributes="0"/>
+                              <Component id="jrb_bau_9" alignment="0" min="-2" max="-2" attributes="0"/>
+                              <Component id="jrb_bau_8" alignment="0" min="-2" max="-2" attributes="0"/>
+                              <Component id="jrb_bau_7" alignment="0" min="-2" max="-2" attributes="0"/>
+                              <Component id="jrb_bau_3" alignment="0" min="-2" max="-2" attributes="0"/>
+                              <Component id="jrb_bau_1" alignment="0" min="-2" max="-2" attributes="0"/>
                           </Group>
                       </Group>
                       <Group type="102" alignment="0" attributes="0">
@@ -53,28 +47,20 @@
                   <EmptySpace min="-2" pref="90" max="-2" attributes="0"/>
                   <Component id="jLabel2" min="-2" max="-2" attributes="0"/>
                   <EmptySpace min="-2" pref="54" max="-2" attributes="0"/>
-                  <Component id="jrb_10" min="-2" max="-2" attributes="0"/>
-                  <EmptySpace type="unrelated" max="-2" attributes="0"/>
-                  <Component id="jrb_9" min="-2" max="-2" attributes="0"/>
-                  <EmptySpace min="-2" pref="5" max="-2" attributes="0"/>
-                  <Component id="jrb_8" min="-2" max="-2" attributes="0"/>
-                  <EmptySpace max="-2" attributes="0"/>
-                  <Component id="jrb_7" min="-2" max="-2" attributes="0"/>
-                  <EmptySpace max="-2" attributes="0"/>
-                  <Component id="jrb_6" min="-2" max="-2" attributes="0"/>
-                  <EmptySpace type="unrelated" max="-2" attributes="0"/>
-                  <Component id="jrb_5" min="-2" max="-2" attributes="0"/>
-                  <EmptySpace type="unrelated" max="-2" attributes="0"/>
-                  <Component id="jrb_4" min="-2" max="-2" attributes="0"/>
-                  <EmptySpace type="unrelated" max="-2" attributes="0"/>
-                  <Component id="jrb_3" min="-2" max="-2" attributes="0"/>
-                  <EmptySpace type="unrelated" max="-2" attributes="0"/>
-                  <Component id="jrb_2" min="-2" max="-2" attributes="0"/>
-                  <EmptySpace max="-2" attributes="0"/>
-                  <Component id="jrb_0" min="-2" max="-2" attributes="0"/>
+                  <Component id="jrb_bau_9" min="-2" max="-2" attributes="0"/>
+                  <EmptySpace type="separate" max="-2" attributes="0"/>
+                  <Component id="jrb_bau_8" min="-2" max="-2" attributes="0"/>
+                  <EmptySpace min="-2" pref="20" max="-2" attributes="0"/>
+                  <Component id="jrb_bau_7" min="-2" max="-2" attributes="0"/>
+                  <EmptySpace type="separate" max="-2" attributes="0"/>
+                  <Component id="jrb_bau_5" min="-2" max="-2" attributes="0"/>
+                  <EmptySpace type="separate" max="-2" attributes="0"/>
+                  <Component id="jrb_bau_3" min="-2" max="-2" attributes="0"/>
+                  <EmptySpace type="separate" max="-2" attributes="0"/>
+                  <Component id="jrb_bau_1" min="-2" max="-2" attributes="0"/>
                   <EmptySpace type="separate" max="-2" attributes="0"/>
                   <Component id="btn_lanjut2" min="-2" max="-2" attributes="0"/>
-                  <EmptySpace pref="317" max="32767" attributes="0"/>
+                  <EmptySpace pref="355" max="32767" attributes="0"/>
               </Group>
           </Group>
         </DimensionLayout>
@@ -85,7 +71,7 @@
             <Property name="text" type="java.lang.String" value="Pilih Kriteria Bau Ikan"/>
           </Properties>
         </Component>
-        <Component class="javax.swing.JRadioButton" name="jrb_10">
+        <Component class="javax.swing.JRadioButton" name="jrb_bau_9">
           <Properties>
             <Property name="buttonGroup" type="javax.swing.ButtonGroup" editor="org.netbeans.modules.form.RADComponent$ButtonGroupPropertyEditor">
               <ComponentRef name="Bau"/>
@@ -93,7 +79,7 @@
             <Property name="text" type="java.lang.String" value="Segar, Berbau rumput laut"/>
           </Properties>
         </Component>
-        <Component class="javax.swing.JRadioButton" name="jrb_9">
+        <Component class="javax.swing.JRadioButton" name="jrb_bau_8">
           <Properties>
             <Property name="buttonGroup" type="javax.swing.ButtonGroup" editor="org.netbeans.modules.form.RADComponent$ButtonGroupPropertyEditor">
               <ComponentRef name="Bau"/>
@@ -101,7 +87,7 @@
             <Property name="text" type="java.lang.String" value="Segar, bau rumput laut mulai berkurang."/>
           </Properties>
         </Component>
-        <Component class="javax.swing.JRadioButton" name="jrb_8">
+        <Component class="javax.swing.JRadioButton" name="jrb_bau_7">
           <Properties>
             <Property name="buttonGroup" type="javax.swing.ButtonGroup" editor="org.netbeans.modules.form.RADComponent$ButtonGroupPropertyEditor">
               <ComponentRef name="Bau"/>
@@ -109,7 +95,7 @@
             <Property name="text" type="java.lang.String" value="Tawar, Netral."/>
           </Properties>
         </Component>
-        <Component class="javax.swing.JRadioButton" name="jrb_6">
+        <Component class="javax.swing.JRadioButton" name="jrb_bau_3">
           <Properties>
             <Property name="buttonGroup" type="javax.swing.ButtonGroup" editor="org.netbeans.modules.form.RADComponent$ButtonGroupPropertyEditor">
               <ComponentRef name="Bau"/>
@@ -117,31 +103,7 @@
             <Property name="text" type="java.lang.String" value="Berbau susu asam atau seperti susu kental."/>
           </Properties>
         </Component>
-        <Component class="javax.swing.JRadioButton" name="jrb_4">
-          <Properties>
-            <Property name="buttonGroup" type="javax.swing.ButtonGroup" editor="org.netbeans.modules.form.RADComponent$ButtonGroupPropertyEditor">
-              <ComponentRef name="Bau"/>
-            </Property>
-            <Property name="text" type="java.lang.String" value="Berbau asam asetat, rumput atau seperti sabun."/>
-          </Properties>
-        </Component>
-        <Component class="javax.swing.JRadioButton" name="jrb_2">
-          <Properties>
-            <Property name="buttonGroup" type="javax.swing.ButtonGroup" editor="org.netbeans.modules.form.RADComponent$ButtonGroupPropertyEditor">
-              <ComponentRef name="Bau"/>
-            </Property>
-            <Property name="text" type="java.lang.String" value="Bau ammonia kuat, ada bau H2S."/>
-          </Properties>
-        </Component>
-        <Component class="javax.swing.JRadioButton" name="jrb_0">
-          <Properties>
-            <Property name="buttonGroup" type="javax.swing.ButtonGroup" editor="org.netbeans.modules.form.RADComponent$ButtonGroupPropertyEditor">
-              <ComponentRef name="Bau"/>
-            </Property>
-            <Property name="text" type="java.lang.String" value="Bau Busuk, bau indol."/>
-          </Properties>
-        </Component>
-        <Component class="javax.swing.JRadioButton" name="jrb_7">
+        <Component class="javax.swing.JRadioButton" name="jrb_bau_5">
           <Properties>
             <Property name="buttonGroup" type="javax.swing.ButtonGroup" editor="org.netbeans.modules.form.RADComponent$ButtonGroupPropertyEditor">
               <ComponentRef name="Bau"/>
@@ -149,15 +111,7 @@
             <Property name="text" type="java.lang.String" value="Berbau susu, belum ada bau asam, ada bau seperti ikan asin."/>
           </Properties>
         </Component>
-        <Component class="javax.swing.JRadioButton" name="jrb_3">
-          <Properties>
-            <Property name="buttonGroup" type="javax.swing.ButtonGroup" editor="org.netbeans.modules.form.RADComponent$ButtonGroupPropertyEditor">
-              <ComponentRef name="Bau"/>
-            </Property>
-            <Property name="text" type="java.lang.String" value="Bau ammonia mulai timbul."/>
-          </Properties>
-        </Component>
-        <Component class="javax.swing.JRadioButton" name="jrb_5">
+        <Component class="javax.swing.JRadioButton" name="jrb_bau_1">
           <Properties>
             <Property name="buttonGroup" type="javax.swing.ButtonGroup" editor="org.netbeans.modules.form.RADComponent$ButtonGroupPropertyEditor">
               <ComponentRef name="Bau"/>
@@ -191,18 +145,21 @@
                       <Group type="102" alignment="0" attributes="0">
                           <EmptySpace min="-2" pref="368" max="-2" attributes="0"/>
                           <Group type="103" groupAlignment="0" attributes="0">
-                              <Component id="jrb_mata_6" min="-2" max="-2" attributes="0"/>
-                              <Component id="jrb_mata_10" min="-2" max="-2" attributes="0"/>
-                              <Component id="jrb_mata_4" alignment="0" min="-2" max="-2" attributes="0"/>
-                              <Component id="jrb_mata_0" alignment="0" min="-2" max="-2" attributes="0"/>
+                              <Component id="jrb_mata_8" min="-2" max="-2" attributes="0"/>
+                              <Component id="jrb_mata_9" min="-2" max="-2" attributes="0"/>
+                              <Component id="jrb_mata_7" alignment="0" min="-2" max="-2" attributes="0"/>
+                              <Component id="jrb_mata_6" alignment="0" min="-2" max="-2" attributes="0"/>
+                              <Component id="jrb_mata_5" alignment="0" min="-2" max="-2" attributes="0"/>
+                              <Component id="jrb_mata_3" alignment="0" min="-2" max="-2" attributes="0"/>
+                              <Component id="jrb_mata_1" alignment="0" min="-2" max="-2" attributes="0"/>
                           </Group>
                       </Group>
                       <Group type="102" alignment="0" attributes="0">
-                          <EmptySpace min="-2" pref="555" max="-2" attributes="0"/>
+                          <EmptySpace min="-2" pref="559" max="-2" attributes="0"/>
                           <Component id="btn_lanjut3" min="-2" max="-2" attributes="0"/>
                       </Group>
                   </Group>
-                  <EmptySpace pref="585" max="32767" attributes="0"/>
+                  <EmptySpace pref="555" max="32767" attributes="0"/>
               </Group>
           </Group>
         </DimensionLayout>
@@ -212,16 +169,22 @@
                   <EmptySpace min="-2" pref="96" max="-2" attributes="0"/>
                   <Component id="jLabel3" min="-2" max="-2" attributes="0"/>
                   <EmptySpace min="-2" pref="47" max="-2" attributes="0"/>
-                  <Component id="jrb_mata_10" min="-2" max="-2" attributes="0"/>
+                  <Component id="jrb_mata_9" min="-2" max="-2" attributes="0"/>
+                  <EmptySpace type="separate" max="-2" attributes="0"/>
+                  <Component id="jrb_mata_8" min="-2" max="-2" attributes="0"/>
+                  <EmptySpace type="separate" max="-2" attributes="0"/>
+                  <Component id="jrb_mata_7" min="-2" max="-2" attributes="0"/>
                   <EmptySpace type="separate" max="-2" attributes="0"/>
                   <Component id="jrb_mata_6" min="-2" max="-2" attributes="0"/>
-                  <EmptySpace type="separate" max="-2" attributes="0"/>
-                  <Component id="jrb_mata_4" min="-2" max="-2" attributes="0"/>
-                  <EmptySpace type="separate" max="-2" attributes="0"/>
-                  <Component id="jrb_mata_0" min="-2" max="-2" attributes="0"/>
-                  <EmptySpace type="separate" max="-2" attributes="0"/>
+                  <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                  <Component id="jrb_mata_5" min="-2" max="-2" attributes="0"/>
+                  <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                  <Component id="jrb_mata_3" min="-2" max="-2" attributes="0"/>
+                  <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                  <Component id="jrb_mata_1" min="-2" max="-2" attributes="0"/>
+                  <EmptySpace min="-2" pref="44" max="-2" attributes="0"/>
                   <Component id="btn_lanjut3" min="-2" max="-2" attributes="0"/>
-                  <EmptySpace pref="444" max="32767" attributes="0"/>
+                  <EmptySpace pref="328" max="32767" attributes="0"/>
               </Group>
           </Group>
         </DimensionLayout>
@@ -232,12 +195,28 @@
             <Property name="text" type="java.lang.String" value="Pilih Kriteria Mata Ikan"/>
           </Properties>
         </Component>
-        <Component class="javax.swing.JRadioButton" name="jrb_mata_10">
+        <Component class="javax.swing.JRadioButton" name="jrb_mata_9">
           <Properties>
             <Property name="buttonGroup" type="javax.swing.ButtonGroup" editor="org.netbeans.modules.form.RADComponent$ButtonGroupPropertyEditor">
               <ComponentRef name="Mata"/>
             </Property>
-            <Property name="text" type="java.lang.String" value="Cerah, pupil hitam menonjol dengan kornea jernih."/>
+            <Property name="text" type="java.lang.String" value="Cerah, bola mata menonjol, kornea jernih"/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JRadioButton" name="jrb_mata_8">
+          <Properties>
+            <Property name="buttonGroup" type="javax.swing.ButtonGroup" editor="org.netbeans.modules.form.RADComponent$ButtonGroupPropertyEditor">
+              <ComponentRef name="Mata"/>
+            </Property>
+            <Property name="text" type="java.lang.String" value="Cerah, bola mata rata, kornea jernih"/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JRadioButton" name="jrb_mata_7">
+          <Properties>
+            <Property name="buttonGroup" type="javax.swing.ButtonGroup" editor="org.netbeans.modules.form.RADComponent$ButtonGroupPropertyEditor">
+              <ComponentRef name="Mata"/>
+            </Property>
+            <Property name="text" type="java.lang.String" value="Agak cerah, bola mata rata, pupil agak keabu-abuan, kornea agak keruh "/>
           </Properties>
         </Component>
         <Component class="javax.swing.JRadioButton" name="jrb_mata_6">
@@ -245,28 +224,27 @@
             <Property name="buttonGroup" type="javax.swing.ButtonGroup" editor="org.netbeans.modules.form.RADComponent$ButtonGroupPropertyEditor">
               <ComponentRef name="Mata"/>
             </Property>
-            <Property name="text" type="java.lang.String" value="Bola mata agak cekung, pupil berubah abu-abu, kornea agak keruh."/>
-          </Properties>
-        </Component>
-        <Component class="javax.swing.JRadioButton" name="jrb_mata_4">
-          <Properties>
-            <Property name="buttonGroup" type="javax.swing.ButtonGroup" editor="org.netbeans.modules.form.RADComponent$ButtonGroupPropertyEditor">
-              <ComponentRef name="Mata"/>
-            </Property>
-            <Property name="text" type="java.lang.String" value="Bola mata agak cekung, pupil putih susu, kornea keruh"/>
-          </Properties>
-        </Component>
-        <Component class="javax.swing.JRadioButton" name="jrb_mata_0">
-          <Properties>
-            <Property name="buttonGroup" type="javax.swing.ButtonGroup" editor="org.netbeans.modules.form.RADComponent$ButtonGroupPropertyEditor">
-              <ComponentRef name="Mata"/>
-            </Property>
-            <Property name="text" type="java.lang.String" value="Bola mata dan pupil tenggelam, tertutuo lendir kuning tebal."/>
+            <Property name="text" type="java.lang.String" value="Bola mata agak cekung, pupil berubah keabu-abuan, kornea agak keruh. "/>
           </Properties>
         </Component>
         <Component class="javax.swing.JButton" name="btn_lanjut3">
           <Properties>
             <Property name="text" type="java.lang.String" value="lanjut"/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JRadioButton" name="jrb_mata_5">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="Bola mata agak cekung, pupil keabu-abuan, kornea agak keruh. "/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JRadioButton" name="jrb_mata_3">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="Bola mata cekung, pupil mulai berubah menjadi putihsusu, kornea keruh."/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JRadioButton" name="jrb_mata_1">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="Bola mata cekung, pupil mulai berubah menjadi putihsusu, kornea keruh."/>
           </Properties>
         </Component>
       </SubComponents>
@@ -281,7 +259,7 @@
       <Layout>
         <DimensionLayout dim="0">
           <Group type="103" groupAlignment="0" attributes="0">
-              <Group type="102" alignment="0" attributes="0">
+              <Group type="102" attributes="0">
                   <Group type="103" groupAlignment="0" attributes="0">
                       <Group type="102" alignment="0" attributes="0">
                           <EmptySpace min="-2" pref="616" max="-2" attributes="0"/>
@@ -290,18 +268,21 @@
                       <Group type="102" alignment="0" attributes="0">
                           <EmptySpace min="-2" pref="368" max="-2" attributes="0"/>
                           <Group type="103" groupAlignment="0" attributes="0">
+                              <Component id="jrb_insang_5" min="-2" max="-2" attributes="0"/>
+                              <Component id="jrb_insang_8" alignment="0" min="-2" max="-2" attributes="0"/>
+                              <Component id="jrb_insang_9" alignment="0" min="-2" max="-2" attributes="0"/>
+                              <Component id="jrb_insang_7" alignment="0" min="-2" max="-2" attributes="0"/>
                               <Component id="jrb_insang_6" alignment="0" min="-2" max="-2" attributes="0"/>
-                              <Component id="jrb_insang_10" alignment="0" min="-2" max="-2" attributes="0"/>
-                              <Component id="jrb_insang_4" alignment="0" min="-2" max="-2" attributes="0"/>
-                              <Component id="jrb_insang_0" alignment="0" min="-2" max="-2" attributes="0"/>
+                              <Component id="jrb_insang_3" alignment="0" min="-2" max="-2" attributes="0"/>
+                              <Component id="jrb_insang_1" alignment="0" min="-2" max="-2" attributes="0"/>
                           </Group>
                       </Group>
                       <Group type="102" alignment="0" attributes="0">
-                          <EmptySpace min="-2" pref="555" max="-2" attributes="0"/>
+                          <EmptySpace min="-2" pref="562" max="-2" attributes="0"/>
                           <Component id="btn_lanjut4" min="-2" max="-2" attributes="0"/>
                       </Group>
                   </Group>
-                  <EmptySpace pref="327" max="32767" attributes="0"/>
+                  <EmptySpace pref="535" max="32767" attributes="0"/>
               </Group>
           </Group>
         </DimensionLayout>
@@ -311,16 +292,22 @@
                   <EmptySpace min="-2" pref="96" max="-2" attributes="0"/>
                   <Component id="jLabel4" min="-2" max="-2" attributes="0"/>
                   <EmptySpace min="-2" pref="47" max="-2" attributes="0"/>
-                  <Component id="jrb_insang_10" min="-2" max="-2" attributes="0"/>
+                  <Component id="jrb_insang_9" min="-2" max="-2" attributes="0"/>
+                  <EmptySpace type="separate" max="-2" attributes="0"/>
+                  <Component id="jrb_insang_8" min="-2" max="-2" attributes="0"/>
+                  <EmptySpace type="separate" max="-2" attributes="0"/>
+                  <Component id="jrb_insang_7" min="-2" max="-2" attributes="0"/>
                   <EmptySpace type="separate" max="-2" attributes="0"/>
                   <Component id="jrb_insang_6" min="-2" max="-2" attributes="0"/>
                   <EmptySpace type="separate" max="-2" attributes="0"/>
-                  <Component id="jrb_insang_4" min="-2" max="-2" attributes="0"/>
+                  <Component id="jrb_insang_5" min="-2" max="-2" attributes="0"/>
                   <EmptySpace type="separate" max="-2" attributes="0"/>
-                  <Component id="jrb_insang_0" min="-2" max="-2" attributes="0"/>
+                  <Component id="jrb_insang_3" min="-2" max="-2" attributes="0"/>
                   <EmptySpace type="separate" max="-2" attributes="0"/>
+                  <Component id="jrb_insang_1" min="-2" max="-2" attributes="0"/>
+                  <EmptySpace min="-2" pref="27" max="-2" attributes="0"/>
                   <Component id="btn_lanjut4" min="-2" max="-2" attributes="0"/>
-                  <EmptySpace pref="444" max="32767" attributes="0"/>
+                  <EmptySpace pref="306" max="32767" attributes="0"/>
               </Group>
           </Group>
         </DimensionLayout>
@@ -331,12 +318,28 @@
             <Property name="text" type="java.lang.String" value="Pilih Kriteria Kenampakan Insang Ikan"/>
           </Properties>
         </Component>
-        <Component class="javax.swing.JRadioButton" name="jrb_insang_10">
+        <Component class="javax.swing.JRadioButton" name="jrb_insang_9">
           <Properties>
             <Property name="buttonGroup" type="javax.swing.ButtonGroup" editor="org.netbeans.modules.form.RADComponent$ButtonGroupPropertyEditor">
               <ComponentRef name="Insang"/>
             </Property>
-            <Property name="text" type="java.lang.String" value="Warna merah cemerlang tanpa adanya lendir."/>
+            <Property name="text" type="java.lang.String" value="Warna merah cemerlang, tanpa lendir"/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JRadioButton" name="jrb_insang_8">
+          <Properties>
+            <Property name="buttonGroup" type="javax.swing.ButtonGroup" editor="org.netbeans.modules.form.RADComponent$ButtonGroupPropertyEditor">
+              <ComponentRef name="Insang"/>
+            </Property>
+            <Property name="text" type="java.lang.String" value="Warna merah kurang cemerlang, tanpa lendir."/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JRadioButton" name="jrb_insang_7">
+          <Properties>
+            <Property name="buttonGroup" type="javax.swing.ButtonGroup" editor="org.netbeans.modules.form.RADComponent$ButtonGroupPropertyEditor">
+              <ComponentRef name="Insang"/>
+            </Property>
+            <Property name="text" type="java.lang.String" value="Warna merah agak kusam, tanpa lendir."/>
           </Properties>
         </Component>
         <Component class="javax.swing.JRadioButton" name="jrb_insang_6">
@@ -344,28 +347,33 @@
             <Property name="buttonGroup" type="javax.swing.ButtonGroup" editor="org.netbeans.modules.form.RADComponent$ButtonGroupPropertyEditor">
               <ComponentRef name="Insang"/>
             </Property>
-            <Property name="text" type="java.lang.String" value="Mulai terjadi perubahan warna merah muda sampai merah coklat, terdapat sedikit lendir, bau asam mulai nyata."/>
-          </Properties>
-        </Component>
-        <Component class="javax.swing.JRadioButton" name="jrb_insang_4">
-          <Properties>
-            <Property name="buttonGroup" type="javax.swing.ButtonGroup" editor="org.netbeans.modules.form.RADComponent$ButtonGroupPropertyEditor">
-              <ComponentRef name="Insang"/>
-            </Property>
-            <Property name="text" type="java.lang.String" value="Perubahan warna lebih nyata. Warna merah coklat, lendir tebal, bau kuat."/>
-          </Properties>
-        </Component>
-        <Component class="javax.swing.JRadioButton" name="jrb_insang_0">
-          <Properties>
-            <Property name="buttonGroup" type="javax.swing.ButtonGroup" editor="org.netbeans.modules.form.RADComponent$ButtonGroupPropertyEditor">
-              <ComponentRef name="Insang"/>
-            </Property>
-            <Property name="text" type="java.lang.String" value="Warna Merah coklat, merah, atau abu-abu. Tertutup lendir tebal, berbau asam atau busuk."/>
+            <Property name="text" type="java.lang.String" value="Merah agak kusam, sedikit lendir"/>
           </Properties>
         </Component>
         <Component class="javax.swing.JButton" name="btn_lanjut4">
           <Properties>
             <Property name="text" type="java.lang.String" value="lanjut"/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JRadioButton" name="jrb_insang_5">
+          <Properties>
+            <Property name="buttonGroup" type="javax.swing.ButtonGroup" editor="org.netbeans.modules.form.RADComponent$ButtonGroupPropertyEditor">
+              <ComponentRef name="Insang"/>
+            </Property>
+            <Property name="text" type="java.lang.String" value="Mulai ada diskolorasi, merah kecoklatan, sedikit lendir, tanpa lendir."/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JRadioButton" name="jrb_insang_3">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="Warna merah coklat, lendir tebal"/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JRadioButton" name="jrb_insang_1">
+          <Properties>
+            <Property name="buttonGroup" type="javax.swing.ButtonGroup" editor="org.netbeans.modules.form.RADComponent$ButtonGroupPropertyEditor">
+              <ComponentRef name="Insang"/>
+            </Property>
+            <Property name="text" type="java.lang.String" value="Warna merah coklat ada sedikit putih, lendir tebal."/>
           </Properties>
         </Component>
       </SubComponents>
@@ -389,18 +397,22 @@
                       <Group type="102" alignment="0" attributes="0">
                           <EmptySpace min="-2" pref="368" max="-2" attributes="0"/>
                           <Group type="103" groupAlignment="0" attributes="0">
+                              <Component id="jrb_badan_8" alignment="0" min="-2" max="-2" attributes="0"/>
+                              <Component id="jrb_badan_9" alignment="0" min="-2" max="-2" attributes="0"/>
+                              <Component id="jrb_badan_7" alignment="0" min="-2" max="-2" attributes="0"/>
                               <Component id="jrb_badan_6" alignment="0" min="-2" max="-2" attributes="0"/>
-                              <Component id="jrb_badan_10" alignment="0" min="-2" max="-2" attributes="0"/>
-                              <Component id="jrb_badan_4" alignment="0" min="-2" max="-2" attributes="0"/>
-                              <Component id="jrb_badan_0" alignment="0" min="-2" max="-2" attributes="0"/>
+                              <Component id="jrb_badan_5" alignment="0" min="-2" max="-2" attributes="0"/>
+                              <Component id="jrb_badan_3" alignment="0" min="-2" max="-2" attributes="0"/>
+                              <Component id="jrb_badan_1" alignment="0" min="-2" max="-2" attributes="0"/>
                           </Group>
                       </Group>
-                      <Group type="102" alignment="0" attributes="0">
-                          <EmptySpace min="-2" pref="555" max="-2" attributes="0"/>
-                          <Component id="btn_lanjut5" min="-2" max="-2" attributes="0"/>
-                      </Group>
                   </Group>
-                  <EmptySpace pref="255" max="32767" attributes="0"/>
+                  <EmptySpace pref="486" max="32767" attributes="0"/>
+              </Group>
+              <Group type="102" alignment="1" attributes="0">
+                  <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
+                  <Component id="btn_lanjut5" min="-2" max="-2" attributes="0"/>
+                  <EmptySpace min="-2" pref="587" max="-2" attributes="0"/>
               </Group>
           </Group>
         </DimensionLayout>
@@ -410,16 +422,22 @@
                   <EmptySpace min="-2" pref="96" max="-2" attributes="0"/>
                   <Component id="jLabel5" min="-2" max="-2" attributes="0"/>
                   <EmptySpace min="-2" pref="47" max="-2" attributes="0"/>
-                  <Component id="jrb_badan_10" min="-2" max="-2" attributes="0"/>
+                  <Component id="jrb_badan_9" min="-2" max="-2" attributes="0"/>
+                  <EmptySpace type="separate" max="-2" attributes="0"/>
+                  <Component id="jrb_badan_8" min="-2" max="-2" attributes="0"/>
+                  <EmptySpace type="separate" max="-2" attributes="0"/>
+                  <Component id="jrb_badan_7" min="-2" max="-2" attributes="0"/>
                   <EmptySpace type="separate" max="-2" attributes="0"/>
                   <Component id="jrb_badan_6" min="-2" max="-2" attributes="0"/>
                   <EmptySpace type="separate" max="-2" attributes="0"/>
-                  <Component id="jrb_badan_4" min="-2" max="-2" attributes="0"/>
+                  <Component id="jrb_badan_5" min="-2" max="-2" attributes="0"/>
                   <EmptySpace type="separate" max="-2" attributes="0"/>
-                  <Component id="jrb_badan_0" min="-2" max="-2" attributes="0"/>
+                  <Component id="jrb_badan_3" min="-2" max="-2" attributes="0"/>
                   <EmptySpace type="separate" max="-2" attributes="0"/>
+                  <Component id="jrb_badan_1" min="-2" max="-2" attributes="0"/>
+                  <EmptySpace min="-2" pref="44" max="-2" attributes="0"/>
                   <Component id="btn_lanjut5" min="-2" max="-2" attributes="0"/>
-                  <EmptySpace pref="444" max="32767" attributes="0"/>
+                  <EmptySpace pref="289" max="32767" attributes="0"/>
               </Group>
           </Group>
         </DimensionLayout>
@@ -430,12 +448,28 @@
             <Property name="text" type="java.lang.String" value="Pilih Kriteria lendir dan permukaan badan Ikan"/>
           </Properties>
         </Component>
-        <Component class="javax.swing.JRadioButton" name="jrb_badan_10">
+        <Component class="javax.swing.JRadioButton" name="jrb_badan_9">
           <Properties>
             <Property name="buttonGroup" type="javax.swing.ButtonGroup" editor="org.netbeans.modules.form.RADComponent$ButtonGroupPropertyEditor">
               <ComponentRef name="Badan"/>
             </Property>
-            <Property name="text" type="java.lang.String" value="Lapisan lendir jernih, tembus cahaya (transparan), mengkilat cerah, belum ada perubahan warna, berbau segar."/>
+            <Property name="text" type="java.lang.String" value="Lapisan lendir jernih, transparan, mengkilat cerah."/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JRadioButton" name="jrb_badan_8">
+          <Properties>
+            <Property name="buttonGroup" type="javax.swing.ButtonGroup" editor="org.netbeans.modules.form.RADComponent$ButtonGroupPropertyEditor">
+              <ComponentRef name="Badan"/>
+            </Property>
+            <Property name="text" type="java.lang.String" value="Lapisan lendir jernih, transparan, cerah, belum ada perubahan warna."/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JRadioButton" name="jrb_badan_7">
+          <Properties>
+            <Property name="buttonGroup" type="javax.swing.ButtonGroup" editor="org.netbeans.modules.form.RADComponent$ButtonGroupPropertyEditor">
+              <ComponentRef name="Badan"/>
+            </Property>
+            <Property name="text" type="java.lang.String" value="Lapisan lendir mulai agak keruh, warna agak putih, kurang transparan."/>
           </Properties>
         </Component>
         <Component class="javax.swing.JRadioButton" name="jrb_badan_6">
@@ -443,28 +477,36 @@
             <Property name="buttonGroup" type="javax.swing.ButtonGroup" editor="org.netbeans.modules.form.RADComponent$ButtonGroupPropertyEditor">
               <ComponentRef name="Badan"/>
             </Property>
-            <Property name="text" type="java.lang.String" value="Lendir dipernukaan mulai keruh, warnanya agak putih susu, mulai suram. Mulai terjadi bau tidak sedap."/>
-          </Properties>
-        </Component>
-        <Component class="javax.swing.JRadioButton" name="jrb_badan_4">
-          <Properties>
-            <Property name="buttonGroup" type="javax.swing.ButtonGroup" editor="org.netbeans.modules.form.RADComponent$ButtonGroupPropertyEditor">
-              <ComponentRef name="Badan"/>
-            </Property>
-            <Property name="text" type="java.lang.String" value="Lendir tebal terkadang menggumpal, mulai timbul perubahan warna karena aktifitas bakteri. Bau tidak enak semakin kuat."/>
-          </Properties>
-        </Component>
-        <Component class="javax.swing.JRadioButton" name="jrb_badan_0">
-          <Properties>
-            <Property name="buttonGroup" type="javax.swing.ButtonGroup" editor="org.netbeans.modules.form.RADComponent$ButtonGroupPropertyEditor">
-              <ComponentRef name="Badan"/>
-            </Property>
-            <Property name="text" type="java.lang.String" value="Lendir berwarna kekuning-kuningan, coklat, tebal, warna kusam. Bau menusuk kuat, terjadi pengeringan lendir karena udara."/>
+            <Property name="text" type="java.lang.String" value="Lapisan lendir mulai keruh, warna putih agak kusam, kurang transparan."/>
           </Properties>
         </Component>
         <Component class="javax.swing.JButton" name="btn_lanjut5">
           <Properties>
             <Property name="text" type="java.lang.String" value="lanjut"/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JRadioButton" name="jrb_badan_5">
+          <Properties>
+            <Property name="buttonGroup" type="javax.swing.ButtonGroup" editor="org.netbeans.modules.form.RADComponent$ButtonGroupPropertyEditor">
+              <ComponentRef name="Badan"/>
+            </Property>
+            <Property name="text" type="java.lang.String" value="Lendir tebal menggumpal, mulai berubah warna putih, keruh."/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JRadioButton" name="jrb_badan_3">
+          <Properties>
+            <Property name="buttonGroup" type="javax.swing.ButtonGroup" editor="org.netbeans.modules.form.RADComponent$ButtonGroupPropertyEditor">
+              <ComponentRef name="Badan"/>
+            </Property>
+            <Property name="text" type="java.lang.String" value="Lendir tebal menggumpal, berwarna putih kuning."/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JRadioButton" name="jrb_badan_1">
+          <Properties>
+            <Property name="buttonGroup" type="javax.swing.ButtonGroup" editor="org.netbeans.modules.form.RADComponent$ButtonGroupPropertyEditor">
+              <ComponentRef name="Badan"/>
+            </Property>
+            <Property name="text" type="java.lang.String" value="Lendir tebal menggumpal, warna kuning kecoklatan."/>
           </Properties>
         </Component>
       </SubComponents>
@@ -488,18 +530,21 @@
                       <Group type="102" alignment="0" attributes="0">
                           <EmptySpace min="-2" pref="368" max="-2" attributes="0"/>
                           <Group type="103" groupAlignment="0" attributes="0">
-                              <Component id="jrb_daging_6" alignment="0" min="-2" max="-2" attributes="0"/>
-                              <Component id="jrb_daging_10" alignment="0" min="-2" max="-2" attributes="0"/>
-                              <Component id="jrb_daging_4" alignment="0" min="-2" max="-2" attributes="0"/>
-                              <Component id="jrb_daging_0" alignment="0" min="-2" max="-2" attributes="0"/>
+                              <Component id="jrb_daging_8" alignment="0" min="-2" max="-2" attributes="0"/>
+                              <Component id="jrb_daging_9" alignment="0" min="-2" max="-2" attributes="0"/>
+                              <Component id="jrb_daging_7" alignment="0" min="-2" max="-2" attributes="0"/>
+                              <Component id="jrb_daging_5" alignment="0" min="-2" max="-2" attributes="0"/>
+                              <Component id="jrb_daging_3" alignment="0" min="-2" max="-2" attributes="0"/>
+                              <Component id="jrb_daging_1" alignment="0" min="-2" max="-2" attributes="0"/>
                           </Group>
                       </Group>
-                      <Group type="102" alignment="0" attributes="0">
-                          <EmptySpace min="-2" pref="555" max="-2" attributes="0"/>
-                          <Component id="btn_lanjut6" min="-2" max="-2" attributes="0"/>
-                      </Group>
                   </Group>
-                  <EmptySpace pref="19" max="32767" attributes="0"/>
+                  <EmptySpace pref="213" max="32767" attributes="0"/>
+              </Group>
+              <Group type="102" alignment="1" attributes="0">
+                  <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
+                  <Component id="btn_lanjut6" min="-2" max="-2" attributes="0"/>
+                  <EmptySpace min="-2" pref="614" max="-2" attributes="0"/>
               </Group>
           </Group>
         </DimensionLayout>
@@ -509,16 +554,20 @@
                   <EmptySpace min="-2" pref="96" max="-2" attributes="0"/>
                   <Component id="jLabel6" min="-2" max="-2" attributes="0"/>
                   <EmptySpace min="-2" pref="47" max="-2" attributes="0"/>
-                  <Component id="jrb_daging_10" min="-2" max="-2" attributes="0"/>
+                  <Component id="jrb_daging_9" min="-2" max="-2" attributes="0"/>
                   <EmptySpace type="separate" max="-2" attributes="0"/>
-                  <Component id="jrb_daging_6" min="-2" max="-2" attributes="0"/>
+                  <Component id="jrb_daging_8" min="-2" max="-2" attributes="0"/>
                   <EmptySpace type="separate" max="-2" attributes="0"/>
-                  <Component id="jrb_daging_4" min="-2" max="-2" attributes="0"/>
+                  <Component id="jrb_daging_7" min="-2" max="-2" attributes="0"/>
                   <EmptySpace type="separate" max="-2" attributes="0"/>
-                  <Component id="jrb_daging_0" min="-2" max="-2" attributes="0"/>
+                  <Component id="jrb_daging_5" min="-2" max="-2" attributes="0"/>
                   <EmptySpace type="separate" max="-2" attributes="0"/>
+                  <Component id="jrb_daging_3" min="-2" max="-2" attributes="0"/>
+                  <EmptySpace type="separate" max="-2" attributes="0"/>
+                  <Component id="jrb_daging_1" min="-2" max="-2" attributes="0"/>
+                  <EmptySpace min="-2" pref="99" max="-2" attributes="0"/>
                   <Component id="btn_lanjut6" min="-2" max="-2" attributes="0"/>
-                  <EmptySpace pref="444" max="32767" attributes="0"/>
+                  <EmptySpace pref="277" max="32767" attributes="0"/>
               </Group>
           </Group>
         </DimensionLayout>
@@ -529,36 +578,36 @@
             <Property name="text" type="java.lang.String" value="Pilih Kriteria tekstur daging pada Ikan"/>
           </Properties>
         </Component>
-        <Component class="javax.swing.JRadioButton" name="jrb_daging_10">
+        <Component class="javax.swing.JRadioButton" name="jrb_daging_9">
           <Properties>
             <Property name="buttonGroup" type="javax.swing.ButtonGroup" editor="org.netbeans.modules.form.RADComponent$ButtonGroupPropertyEditor">
               <ComponentRef name="Daging"/>
             </Property>
-            <Property name="text" type="java.lang.String" value="Padat. Lentur, jika ditekan dengan jari bekasnya segera hilang, sulit menyobek dagingnya dari tulang belakangnya. Kadang-kadang agak lunak sesuai dengan jenisnya."/>
+            <Property name="text" type="java.lang.String" value="Sayatan daging sangat cemerlang, spesifik jenis, tidak ada pemerahan sepanjang tulang belakang, dinding perut daging utuh."/>
           </Properties>
         </Component>
-        <Component class="javax.swing.JRadioButton" name="jrb_daging_6">
+        <Component class="javax.swing.JRadioButton" name="jrb_daging_8">
           <Properties>
             <Property name="buttonGroup" type="javax.swing.ButtonGroup" editor="org.netbeans.modules.form.RADComponent$ButtonGroupPropertyEditor">
               <ComponentRef name="Daging"/>
             </Property>
-            <Property name="text" type="java.lang.String" value="Daging agak lunak, jika ditekan dengan jari belum ada bekasnya."/>
+            <Property name="text" type="java.lang.String" value="Sayatan daging cemerlang spesifik jenis, tidak ada pemerahan sepanjang tulang belakang, dinding perut utuh."/>
           </Properties>
         </Component>
-        <Component class="javax.swing.JRadioButton" name="jrb_daging_4">
+        <Component class="javax.swing.JRadioButton" name="jrb_daging_7">
           <Properties>
             <Property name="buttonGroup" type="javax.swing.ButtonGroup" editor="org.netbeans.modules.form.RADComponent$ButtonGroupPropertyEditor">
               <ComponentRef name="Daging"/>
             </Property>
-            <Property name="text" type="java.lang.String" value="Lunak. Bekas tekanan jari lama hilangnya. Sisik mudah dilepaskan."/>
+            <Property name="text" type="java.lang.String" value="Sayatan daging sedikit kurang cemerlang, spesifik jenis, tidak ada pemerahan sepanjang tulang belakang, dinding perut daging utuh."/>
           </Properties>
         </Component>
-        <Component class="javax.swing.JRadioButton" name="jrb_daging_0">
+        <Component class="javax.swing.JRadioButton" name="jrb_daging_5">
           <Properties>
             <Property name="buttonGroup" type="javax.swing.ButtonGroup" editor="org.netbeans.modules.form.RADComponent$ButtonGroupPropertyEditor">
               <ComponentRef name="Daging"/>
             </Property>
-            <Property name="text" type="java.lang.String" value="Sangat lunak. Bekas jari tak mudah hilang. Daging mudah disobek dari tulang belakangnya."/>
+            <Property name="text" type="java.lang.String" value="Sayatan daging mulai pudar, banyak pemerahan sepanjang tulang belakang, dinding perut agak lunak."/>
           </Properties>
         </Component>
         <Component class="javax.swing.JButton" name="btn_lanjut6">
@@ -566,9 +615,19 @@
             <Property name="text" type="java.lang.String" value="lanjut"/>
           </Properties>
         </Component>
+        <Component class="javax.swing.JRadioButton" name="jrb_daging_3">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="Sayatan daging kusam, warna merah jelas sekali sepanjang tulang belakang, dinding perut lunak."/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JRadioButton" name="jrb_daging_1">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="Sayatan daging kusam sekali, warna merah jelas sekali sepanjang tulang belakang, dinding perut sangat lunak."/>
+          </Properties>
+        </Component>
       </SubComponents>
     </Container>
-    <Container class="javax.swing.JFrame" name="perut">
+    <Container class="javax.swing.JFrame" name="tekstur">
       <Properties>
         <Property name="size" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
           <Dimension value="[1366, 800]"/>
@@ -578,23 +637,25 @@
       <Layout>
         <DimensionLayout dim="0">
           <Group type="103" groupAlignment="0" attributes="0">
-              <Group type="102" alignment="0" attributes="0">
+              <Group type="102" attributes="0">
                   <Group type="103" groupAlignment="0" attributes="0">
                       <Group type="102" alignment="0" attributes="0">
-                          <EmptySpace min="-2" pref="616" max="-2" attributes="0"/>
+                          <EmptySpace min="-2" pref="621" max="-2" attributes="0"/>
                           <Component id="jLabel7" min="-2" max="-2" attributes="0"/>
                       </Group>
                       <Group type="102" alignment="0" attributes="0">
                           <EmptySpace min="-2" pref="368" max="-2" attributes="0"/>
                           <Group type="103" groupAlignment="0" attributes="0">
-                              <Component id="jrb_perut_6" alignment="0" min="-2" max="-2" attributes="0"/>
-                              <Component id="jrb_perut_10" alignment="0" min="-2" max="-2" attributes="0"/>
-                              <Component id="jrb_perut_4" alignment="0" min="-2" max="-2" attributes="0"/>
-                              <Component id="jrb_perut_0" alignment="0" min="-2" max="-2" attributes="0"/>
+                              <Component id="jrb_tekstur_1" min="-2" max="-2" attributes="0"/>
+                              <Component id="jrb_tekstur_8" alignment="0" min="-2" max="-2" attributes="0"/>
+                              <Component id="jrb_tekstur_9" alignment="0" min="-2" max="-2" attributes="0"/>
+                              <Component id="jrb_tekstur_7" alignment="0" min="-2" max="-2" attributes="0"/>
+                              <Component id="jrb_tekstur_5" alignment="0" min="-2" max="-2" attributes="0"/>
+                              <Component id="jrb_tekstur_3" alignment="0" min="-2" max="-2" attributes="0"/>
                           </Group>
                       </Group>
                       <Group type="102" alignment="0" attributes="0">
-                          <EmptySpace min="-2" pref="555" max="-2" attributes="0"/>
+                          <EmptySpace min="-2" pref="554" max="-2" attributes="0"/>
                           <Component id="btn_lanjut7" min="-2" max="-2" attributes="0"/>
                       </Group>
                   </Group>
@@ -605,19 +666,23 @@
         <DimensionLayout dim="1">
           <Group type="103" groupAlignment="0" attributes="0">
               <Group type="102" alignment="0" attributes="0">
-                  <EmptySpace min="-2" pref="96" max="-2" attributes="0"/>
+                  <EmptySpace min="-2" pref="97" max="-2" attributes="0"/>
                   <Component id="jLabel7" min="-2" max="-2" attributes="0"/>
-                  <EmptySpace min="-2" pref="47" max="-2" attributes="0"/>
-                  <Component id="jrb_perut_10" min="-2" max="-2" attributes="0"/>
+                  <EmptySpace min="-2" pref="46" max="-2" attributes="0"/>
+                  <Component id="jrb_tekstur_9" min="-2" max="-2" attributes="0"/>
                   <EmptySpace type="separate" max="-2" attributes="0"/>
-                  <Component id="jrb_perut_6" min="-2" max="-2" attributes="0"/>
+                  <Component id="jrb_tekstur_8" min="-2" max="-2" attributes="0"/>
                   <EmptySpace type="separate" max="-2" attributes="0"/>
-                  <Component id="jrb_perut_4" min="-2" max="-2" attributes="0"/>
+                  <Component id="jrb_tekstur_7" min="-2" max="-2" attributes="0"/>
                   <EmptySpace type="separate" max="-2" attributes="0"/>
-                  <Component id="jrb_perut_0" min="-2" max="-2" attributes="0"/>
+                  <Component id="jrb_tekstur_5" min="-2" max="-2" attributes="0"/>
                   <EmptySpace type="separate" max="-2" attributes="0"/>
+                  <Component id="jrb_tekstur_3" min="-2" max="-2" attributes="0"/>
+                  <EmptySpace type="separate" max="-2" attributes="0"/>
+                  <Component id="jrb_tekstur_1" min="-2" max="-2" attributes="0"/>
+                  <EmptySpace min="-2" pref="34" max="-2" attributes="0"/>
                   <Component id="btn_lanjut7" min="-2" max="-2" attributes="0"/>
-                  <EmptySpace pref="444" max="32767" attributes="0"/>
+                  <EmptySpace pref="342" max="32767" attributes="0"/>
               </Group>
           </Group>
         </DimensionLayout>
@@ -625,44 +690,54 @@
       <SubComponents>
         <Component class="javax.swing.JLabel" name="jLabel7">
           <Properties>
-            <Property name="text" type="java.lang.String" value="Pilih Kriteria Keadaan Daging dan Perut pada Ikan"/>
+            <Property name="text" type="java.lang.String" value="Pilih Kriteria Keadaan Daging"/>
           </Properties>
         </Component>
-        <Component class="javax.swing.JRadioButton" name="jrb_perut_10">
+        <Component class="javax.swing.JRadioButton" name="jrb_tekstur_9">
           <Properties>
             <Property name="buttonGroup" type="javax.swing.ButtonGroup" editor="org.netbeans.modules.form.RADComponent$ButtonGroupPropertyEditor">
               <ComponentRef name="Perut"/>
             </Property>
-            <Property name="text" type="java.lang.String" value="Sayatan daging berwarna cemerlang, tak ada warna merah sepanjang tulang belakang, perutnya utuh dan belum ada perubahan warna. Ginjal merah cerah, dinding perut utuh, isi perut berbau segar."/>
+            <Property name="text" type="java.lang.String" value="Padat, elastis bila ditekan dengan jari, sulit menyobek daging dari tulang belakang."/>
           </Properties>
         </Component>
-        <Component class="javax.swing.JRadioButton" name="jrb_perut_6">
+        <Component class="javax.swing.JRadioButton" name="jrb_tekstur_8">
           <Properties>
             <Property name="buttonGroup" type="javax.swing.ButtonGroup" editor="org.netbeans.modules.form.RADComponent$ButtonGroupPropertyEditor">
               <ComponentRef name="Perut"/>
             </Property>
-            <Property name="text" type="java.lang.String" value="Sayatan daging cerah, dinding perut mulai lembek dan timbul perubahan warna. Warna ginjal pudar, bau tidak segar mulai timbul."/>
+            <Property name="text" type="java.lang.String" value="Agak padat, elastis bila ditekan dengan jari, sulit menyobek daging dari tulang belakang."/>
           </Properties>
         </Component>
-        <Component class="javax.swing.JRadioButton" name="jrb_perut_4">
+        <Component class="javax.swing.JRadioButton" name="jrb_tekstur_7">
           <Properties>
             <Property name="buttonGroup" type="javax.swing.ButtonGroup" editor="org.netbeans.modules.form.RADComponent$ButtonGroupPropertyEditor">
               <ComponentRef name="Perut"/>
             </Property>
-            <Property name="text" type="java.lang.String" value="Sayatan daging mulai berkurang kecerahannya, lunak dan terdapat warna merah sepanjang tulang belakang. Rusuk sudah lembek, bau isi perut makin kuat."/>
+            <Property name="text" type="java.lang.String" value="Agak padat, agak elastis bila ditekan dengan jari, sulit menyobek daging dari tulang belakang."/>
           </Properties>
         </Component>
-        <Component class="javax.swing.JRadioButton" name="jrb_perut_0">
+        <Component class="javax.swing.JRadioButton" name="jrb_tekstur_5">
           <Properties>
             <Property name="buttonGroup" type="javax.swing.ButtonGroup" editor="org.netbeans.modules.form.RADComponent$ButtonGroupPropertyEditor">
               <ComponentRef name="Perut"/>
             </Property>
-            <Property name="text" type="java.lang.String" value="Daging warnanya pudar. Terdapat warna merah sepanjang tulang belakang. Dinding perut mulai hancur, isi perutnya hancur dan berwarna seperti tanah, berbau busuk."/>
+            <Property name="text" type="java.lang.String" value="Agak lunak, kurang elastis bila ditekan dengan jari, agak mudah menyobek daging dari tulang belakang."/>
           </Properties>
         </Component>
         <Component class="javax.swing.JButton" name="btn_lanjut7">
           <Properties>
             <Property name="text" type="java.lang.String" value="lanjut"/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JRadioButton" name="jrb_tekstur_3">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="Lunak, bekas jari terlihat bila ditekan, mudah menyobek daging dari tulang belakang"/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JRadioButton" name="jrb_tekstur_1">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="Sangat lunak, bekas jari tidak hilang bila ditekan, mudah sekali menyobek daging dari tulang belakang."/>
           </Properties>
         </Component>
       </SubComponents>

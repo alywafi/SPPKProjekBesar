@@ -50,8 +50,8 @@ public class C_Login {
                     System.out.println(data[2]);
                     if (data[2].equalsIgnoreCase("pgudang")) {
                         try {
-                            new C_Kriteria(new V_PG_Kriteria(), new M_Kriteria());
-//                            new C_Pgudang(new V_PG_Penjualan(), new M_Ikan(),Integer.valueOf(data[0])  );
+//                            new C_Kriteria(new V_PG_Kriteria(), new M_Kriteria());
+                            new C_Pgudang(new V_PG_Penjualan(), new M_Ikan(),Integer.valueOf(data[0])  );
                             view.dispose();
                         } catch (SQLException ex) {
                             Logger.getLogger(C_Login.class.getName()).log(Level.SEVERE, null, ex);
